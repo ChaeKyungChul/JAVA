@@ -1,0 +1,15 @@
+package sec;
+
+public class InfinityExam {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int x = 5;
+		int y = 0;
+		double z= x / y;
+		System.out.println(z);
+		
+	}
+
+}

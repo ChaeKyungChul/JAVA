@@ -1,0 +1,25 @@
+package sec;
+
+public class InfinityExam {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner(System.in);
+		String strx = scanner
+		
+		int x = 5;
+		double y = 0;   // int 오류  double는 infinity
+		double z= x / y;
+		System.out.println(z);
+		System.out.println(z+ 10000);
+		
+		
+		  // 예외처리 
+		if(Double.isInfinite(z)|| Double.isNaN(z)) {
+			System.out.println("값을 게산 할수 없음.");
+		}else {
+			System.out.println(z + 2);
+		}
+	}
+}

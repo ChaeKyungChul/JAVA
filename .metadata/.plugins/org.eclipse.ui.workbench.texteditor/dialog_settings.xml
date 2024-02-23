@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="상수로 double 타입으로 earth_radius 를 선언하고 6400을 대입"/>
+		<list key="findhistory">
+			<item value="상수로 double 타입으로 earth_radius 를 선언하고 6400을 대입"/>
+			<item value="&#x09;상수로 double 타입으로 earth_radius 를 선언하고 6400을 대입"/>
+			<item value="final 필드에 초기값을 주는 방법"/>
+			<item value="Car 클래스 만든후 "/>
+			<item value="Ca = new Cal2();  //"/>
+			<item value="package sec06;"/>
+			<item value="&#x09;}else if(num &gt; 80) {"/>
+			<item value="java 를 이용하여 가위,바위,보 게임을 만들어보세요"/>
+		</list>
+	</section>
+</section>
