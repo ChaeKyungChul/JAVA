@@ -10,6 +10,14 @@ public class RemoteControlExam {
 			
 			cc = new Audio();
 			cc.turrOn();
+			cc.setVolume(5);
+			cc.setMute(true);
+			cc.setMute(false);
+			cc.turnOff();
+			
+			System.out.println();
+			
+			Remotcontral.changeBattery();
 		}
 
 	}
