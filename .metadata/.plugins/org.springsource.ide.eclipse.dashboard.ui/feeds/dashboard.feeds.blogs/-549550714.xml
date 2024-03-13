@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Spring]]></title><description><![CDATA[Level up your Java code and explore what Spring can do for you.]]></description><link>https://spring.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 12 Mar 2024 19:47:37 GMT</lastBuildDate><item><title><![CDATA[Spring AI 0.8.1 Released]]></title><link>https://spring.io/blog/2024/03/12/spring-ai-0-8-1-released</link><guid isPermaLink="true">https://spring.io/blog/2024/03/12/spring-ai-0-8-1-released</guid><dc:creator><![CDATA[Mark Pollack]]></dc:creator><pubDate>Tue, 12 Mar 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;We are happy to announce the milestone 0.8.1 release of Spring AI.  Thanks for all the community contributions and great discussion on GitHub issues.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Spring]]></title><description><![CDATA[Level up your Java code and explore what Spring can do for you.]]></description><link>https://spring.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 13 Mar 2024 00:49:26 GMT</lastBuildDate><item><title><![CDATA[This Week in Spring - March 12th, 2024]]></title><link>https://spring.io/blog/2024/03/13/this-week-in-spring-march-12th-2024</link><guid isPermaLink="true">https://spring.io/blog/2024/03/13/this-week-in-spring-march-12th-2024</guid><dc:creator><![CDATA[Josh Long]]></dc:creator><pubDate>Wed, 13 Mar 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Hi, Spring fans! Welcome to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! And what a week it&apos;s going to be!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Do this first&lt;/strong&gt;: we need your help! Please answer some questions in &lt;a href=&quot;https://spring.io/blog/2024/03/05/the-state-of-spring-survey-is-back&quot;&gt;our &lt;em&gt;State of Spring&lt;/em&gt; survey!&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Join me for a look at the latest-and-greatest, chronicling &lt;a href=&quot;https://spring.io/blog/2024/03/11/bootiful-spring-boot-in-2024-part-1&quot;&gt;how I got started with Spring Boot in 2024&lt;/a&gt;!&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://spring.io/blog/2024/03/12/spring-ai-0-8-1-released&quot;&gt;Spring AI 0.8.1, with new support for Google&apos;s Gemini, Mistral AI, QDrant vector store, and improvements across the board, has been released!&lt;/a&gt;. Also: it &lt;em&gt;should&lt;/em&gt; work with AOT! (let us know if it doesn&apos;t!)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://spring.io/blog/2024/03/07/a-bootiful-podcast-cristian-schuszter-on-cern&quot;&gt;Cristian Schuszter sat down with me for a discussion about CERN, what they do, their use of Java and Spring Boot, and so much more&lt;/a&gt; in this installment of &lt;em&gt;A Bootiful Podcast&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;Speaking of Spring AI, just last week they announced easy, &lt;a href=&quot;https://spring.io/blog/2024/03/06/function-calling-in-java-and-spring-ai-using-the-latest-mistral-ai-api&quot;&gt;portable support for function callbacks&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;In last week&apos;s installment of Spring Tips, I concluded my three-part series &lt;a href=&quot;https://spring.io/blog/2024/03/06/spring-tips-the-spring-authorization-server-durability-of-data&quot;&gt;looking at the Spring Authorization Server&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;I did an article for the &lt;strong&gt;New Stack&lt;/strong&gt; called &lt;a href=&quot;https://thenewstack.io/we-can-have-nice-things-upgrading-to-java-21-is-worth-it&quot;&gt;&lt;em&gt;We Can Have Nice Things: Upgrading to Java 21 is worth it&lt;/em&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Netflix&apos;s Paul Bakker has shared a very interesting blog looking at Netflix&apos;s motivations for migrating &lt;em&gt;en masse&lt;/em&gt; to &lt;a href=&quot;https://netflixtechblog.com/bending-pause-times-to-your-will-with-generational-zgc-256629c9386b?gi=0d00da753a52&quot;&gt;Java 21 and their incredible gains just by leveraging the new garbage collectors&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;I was captivated by this blog that I invited Paul and his colleague &lt;a href=&quot;https://www.youtube.com/watch?v=HiCfTHmsXMk&quot;&gt;Kavitha Srinivasan&lt;/a&gt; to join me for a good discussion and demo on not just the garbage collector usage, but their migration to Spring Boot, their use of Java 21, some of the things they&apos;re doing to improve startup time, and of course the amazing synergistic work they&apos;re doing, with us, to make Spring GraphQL and Netflix&apos;s DGS frameworks play well together.&lt;/li&gt;
+&lt;li&gt;I&apos;ll be speaking and keynoting at Google Cloud Next 2024; &lt;a href=&quot;https://twitter.com/rseroter/status/1766192665534562538?s=12&amp;#x26;t=n-UflcIbnx1lage-TBk0Cg&quot;&gt;I hope you&apos;ll join the fun and say &quot;hi!&quot; if you&apos;re going to be there!&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Spring AI 0.8.1 Released]]></title><link>https://spring.io/blog/2024/03/12/spring-ai-0-8-1-released</link><guid isPermaLink="true">https://spring.io/blog/2024/03/12/spring-ai-0-8-1-released</guid><dc:creator><![CDATA[Mark Pollack]]></dc:creator><pubDate>Tue, 12 Mar 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;We are happy to announce the milestone 0.8.1 release of Spring AI.  Thanks for all the community contributions and great discussion on GitHub issues.&lt;/p&gt;
 &lt;p&gt;This release has the following new features and improvements.&lt;/p&gt;
 &lt;h2 id=&quot;google-gemini&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#google-gemini&quot; aria-label=&quot;google gemini permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Google Gemini&lt;/h2&gt;
 &lt;p&gt;Google recently released its Gemini AI Model. It has many exciting features and functionalities; check their &lt;a href=&quot;https://blog.google/technology/ai/google-gemini-ai/&quot;&gt;release blog&lt;/a&gt; for an overview.&lt;/p&gt;
@@ -1209,50 +1221,4 @@ Then you can run the native executable:&lt;/p&gt;
 &lt;p&gt;With Spring Boot 2.7.x having reached its end of open source support already, we decided to align the last 5.3.x release with the end of the 6.0.x line. If you have not done so already, please plan your upgrade path to 6.1.x at your earliest convenience.&lt;/p&gt;
 &lt;p&gt;The team will focus on Spring Framework 6.2 now, with a first milestone coming up and a release candidate planned for September; more on this soon.&lt;/p&gt;
 &lt;p&gt;Cheers,
-Juergen&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Spring Functions Catalog 5.0.0?M1 Available]]></title><link>https://spring.io/blog/2024/03/01/spring-functions-catalog-5-0-0-m1-available</link><guid isPermaLink="true">https://spring.io/blog/2024/03/01/spring-functions-catalog-5-0-0-m1-available</guid><dc:creator><![CDATA[Artem Bilan]]></dc:creator><pubDate>Fri, 01 Mar 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;On behalf of Spring Cloud Dataflow team, it is my pleasure to introduce you to Spring Functions Catalog.
-The project&apos;s primary focus is to provide a set of standalone Java functions that can be useful in the end-user applications as-is.
-All the published artifacts are, essentially, auto-configurations for some specific &lt;code&gt;Supplier&lt;/code&gt;, &lt;code&gt;Function&lt;/code&gt; or &lt;code&gt;Consumer&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;We have just released &lt;code&gt;5.0.0-M1&lt;/code&gt; into &lt;a href=&quot;https://repo.spring.io/milestone&quot;&gt;https://repo.spring.io/milestone&lt;/a&gt; repository, and all you need is to include this BOM into your Gradle (or Maven) configuration:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-groovy&quot;&gt;org.springframework.cloud.fn:spring-function-dependencies:5.0.0-M1
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;and choose respective function as dependency for your project.&lt;/p&gt;
-&lt;p&gt;The Spring Functions Catalog is a rebranding (and next generation) of the &lt;code&gt;functions&lt;/code&gt; sub-module of &lt;a href=&quot;https://github.com/spring-cloud/stream-applications&quot;&gt;Stream Applications&lt;/a&gt; project.
-That&apos;s why we chose a version as &lt;code&gt;5.0&lt;/code&gt; from the start since all the functions in this project do the same what they have in Stream Applications.
-Therefore, the next our natural step is to migrate Stream Applications to use this new Spring Functions Catalog.&lt;/p&gt;
-&lt;p&gt;However, the goal of Spring Functions Catalog is not only to feed Stream Applications.
-Because all of them are independent artifacts of an auto-configuration for a single &lt;code&gt;Supplier&lt;/code&gt;, &lt;code&gt;Function&lt;/code&gt; or &lt;code&gt;Consumer&lt;/code&gt; with specific job to do, these functions can simply be added into classpath and used in the target project as-is or composed with other tasks.
-Most of these functions provide an auto-configuration for specific Spring Integration &lt;a href=&quot;https://docs.spring.io/spring-integration/reference/endpoint-summary.html#endpoint-summary&quot;&gt;Channel Adapter&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Here are just a few examples:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;the &lt;code&gt;sftpSupplier&lt;/code&gt; connects to a SFTP server and polls files from a remote directory and &quot;supplies&quot; the files to your application&lt;/li&gt;
-&lt;li&gt;the &lt;code&gt;kafkaPublisher&lt;/code&gt; (the &lt;code&gt;java.util.function.Consumer&lt;/code&gt; implementation) produces records into an Apache Kafka topic&lt;/li&gt;
-&lt;li&gt;the &lt;code&gt;aggregatorFunction&lt;/code&gt; groups multiple inputs into one according to some correlation key&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;After being auto-configured into the &lt;code&gt;ApplicationContext&lt;/code&gt;, these function can be injected into to the target service and composed with plain Java API (see &lt;code&gt;Function.andThen(Function)&lt;/code&gt;).
-However, better (and more natural for Spring applications) way is to use &lt;a href=&quot;https://spring.io/projects/spring-cloud-function&quot;&gt;Spring Cloud Function&lt;/a&gt; project capabilities.
-For example, the &lt;code&gt;FunctionFlowBuilder&lt;/code&gt; from &lt;a href=&quot;https://docs.spring.io/spring-cloud-function/docs/current/reference/html/spring-integration.html#spring-integration&quot;&gt;Spring Cloud Function Integration&lt;/a&gt; module can be used to compose an &lt;code&gt;IntegrationFlow&lt;/code&gt; for any complex solution.
-Another way is to compose them by names via &lt;code&gt;spring.cloud.function.definition&lt;/code&gt; configuration property.&lt;/p&gt;
-&lt;p&gt;As a proof of concept the &lt;a href=&quot;https://github.com/spring-cloud/spring-functions-catalog/tree/main/samples/time-spel-log&quot;&gt;time-spel-log&lt;/a&gt; sample in the project repository has these dependencies:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-groovy&quot;&gt;implementation &apos;org.springframework.cloud.fn:spring-time-supplier&apos;
-implementation &apos;org.springframework.cloud.fn:spring-spel-function&apos;
-implementation &apos;org.springframework.cloud.fn:spring-log-consumer&apos;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;The &lt;code&gt;application.yml&lt;/code&gt; has this property:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-yaml&quot;&gt;spring:
-  cloud:
-    function:
-      definition: timeSupplier|spelFunction|logConsumer
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;The application logic is just like this:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;@Scheduled(fixedDelay = 1000)
-void scheduleFunctionCall() {
-  this.composedFunction.run();
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Where &lt;code&gt;composedFunction&lt;/code&gt; is a &lt;code&gt;Runnable&lt;/code&gt; from &lt;code&gt;FunctionCatalog&lt;/code&gt; and it is that mentioned above composition in the &lt;code&gt;application.yml&lt;/code&gt;.
-The application emits into logs the current time after some transformation every second.&lt;/p&gt;
-&lt;p&gt;Give Spring Functions Catalog a shot, and any feedback or contribution are welcome!&lt;/p&gt;
-&lt;p&gt;From here we are heading for &lt;code&gt;RC1&lt;/code&gt; in the end of March and &lt;code&gt;GA&lt;/code&gt; in April.&lt;/p&gt;
-&lt;p&gt;See more information in &lt;a href=&quot;https://github.com/spring-cloud/spring-functions-catalog&quot;&gt;GitHub repository&lt;/a&gt; for Spring Functions Catalog.&lt;/p&gt;
-&lt;p&gt;Cheers, +
-Artem&lt;/p&gt;</content:encoded></item></channel></rss>
+Juergen&lt;/p&gt;</content:encoded></item></channel></rss>

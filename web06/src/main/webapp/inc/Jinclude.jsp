@@ -7,9 +7,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-   <jsp:include page="inc" flush="true" />
+   <!--<jsp:include page="include.jsp" flush="true" />
    
-   <hr />
+   //<hr />-->
    
    <jsp:include page="include.jsp" flush="true" />
 

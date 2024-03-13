@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="name"/>
+		<item key="selection" value="Conn"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="conn"/>
+			<item value="wri"/>
 			<item value="name"/>
 			<item value="fi"/>
 			<item value="아이"/>
@@ -21,8 +23,6 @@
 			<item value="hw"/>
 			<item value="RES2"/>
 			<item value="RES"/>
-			<item value="상수로 double 타입으로 earth_radius 를 선언하고 6400을 대입"/>
-			<item value="&#x09;상수로 double 타입으로 earth_radius 를 선언하고 6400을 대입"/>
 		</list>
 		<list key="replacehistory">
 		</list>

@@ -1,7 +1,15 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ include file="inc/header.jsp" %>
+<%@ page import="java.sql.Connection"%>
+<%@ page import="jspBoard.dao.DBConnect"%>
+<jsp:include page="inc/header.jsp" flush="true" />
 <%@ include file="inc/aside.jsp" %>
+<jsp:useBean id="db" class="jspBoard.dao.DBConnect" scope="page"/>
+<% 
+   Connection conn = db.conn;
+%>
+
+
     <section>
             <!-- listbox -->
             <div class="listbox">
@@ -13,7 +21,7 @@
                     </div>
                     <div>
                         <a href="#" class="btn btn-primary">목록</a>
-                        <a href="write.html" class="btn btn-primary">글쓰기</a>                      
+                        <a href="write.jsp" class="btn btn-primary">글쓰기</a>                      
                     </div>
                 </div>
                 <table class="table table-hover">
@@ -108,7 +116,7 @@
                     </ul>
                     <div>
                         <a href="#" class="btn btn-primary">목록</a>
-                        <a href="write.html" class="btn btn-primary">글쓰기</a>                      
+                        <a href="write.jsp" class="btn btn-primary">글쓰기</a>                      
                     </div>
                </div>
                <form name="searchform" id="searchform" class="searchform">
