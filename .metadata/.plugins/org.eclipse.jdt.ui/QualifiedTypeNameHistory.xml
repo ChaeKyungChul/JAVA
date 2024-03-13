@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="java.util.Random"/>
-    <fullyQualifiedTypeName name="java.util.Calendar"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="sec11.Earth"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
@@ -10,11 +8,25 @@
     <fullyQualifiedTypeName name="sec01.Remotcontral"/>
     <fullyQualifiedTypeName name="javax.servlet.annotation.WebServlet"/>
     <fullyQualifiedTypeName name="javax.servlet.HttpConstraintElement"/>
-    <fullyQualifiedTypeName name="java.io.IOException"/>
-    <fullyQualifiedTypeName name="java.io.PrintWriter"/>
-    <fullyQualifiedTypeName name="java.util.Enumeration"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="javax.servlet.ServletContext"/>
     <fullyQualifiedTypeName name="java.lang.ClassNotFoundException"/>
+    <fullyQualifiedTypeName name="java.util.Enumeration"/>
+    <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.sql.Date"/>
+    <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+    <fullyQualifiedTypeName name="java.util.Calendar"/>
+    <fullyQualifiedTypeName name="java.lang.annotation.RetentionPolicy"/>
+    <fullyQualifiedTypeName name="java.security.Provider.Service"/>
+    <fullyQualifiedTypeName name="java.lang.reflect.Method"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="javax.servlet.ServletContext"/>
+    <fullyQualifiedTypeName name="javax.swing.JApplet"/>
+    <fullyQualifiedTypeName name="javax.swing.JMenuBar"/>
+    <fullyQualifiedTypeName name="javax.swing.JMenu"/>
+    <fullyQualifiedTypeName name="javax.swing.JTextArea"/>
+    <fullyQualifiedTypeName name="javax.swing.JMenuItem"/>
+    <fullyQualifiedTypeName name="java.io.PrintWriter"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
 </qualifiedTypeNameHistroy>
