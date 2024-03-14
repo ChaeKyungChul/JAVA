@@ -6,10 +6,10 @@
 <%@ include file="inc/aside.jsp" %>
 
 
-         <section>
+        <section>
                 <div class="write">
                     <h2 class="text-center mt-4 mb-5 pb-4">글쓰기</h2>
-                    <form name="writeform" id="writeform" class="writeform row" method="post">
+                    <form action="writeok.jsp" name="writeform" id="writeform" class="writeform row" method="post">
                         <!-- 게스트일때 적용 -->
                         <div class="col-12 row">
                             <div class="col-6 row form-group">
@@ -26,17 +26,23 @@
                             <input type="text" name="title" id="title" class="form-control col-10" placeholder="제목">
                         </div>
                         <div class="col-12">
-                            <textarea name="content" id="content" class="form-control"></textarea>
+                            <textarea name="content" id="contents" class="form-control"></textarea>
                         </div>
-                        
+                    
                         <!-- /게스트일때 적용 -->
                         <div class="col-12 text-center my-5">
                             <a href="index.html" class="btn btn-danger px-5 mx-2">취소</a>
                             <button class="btn btn-primary px-5 mx-2" type="submit">글쓰기</button>
                         </div>
+                        <!--  
+                        <input type="hidden" name="refid" value="" />
+                        <input type="hidden" name="depth" value="" />
+                        <input type="hidden" name="renum" value="" />
+                        -->
                     </form>
                 </div>
                 
             </section>
+
             
 <%@ include file="inc/footer.jsp" %>

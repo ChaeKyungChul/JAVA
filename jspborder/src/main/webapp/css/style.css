@@ -187,7 +187,7 @@ span.space{
     display:inline-block;
     width:20px;
 }
-/* 페이징 */
+/* �럹�씠吏� */
 .paging{
    list-style-type:none;
    display:flex;
@@ -210,7 +210,7 @@ span.space{
     text-decoration:none;
 }
 
-/** 검색 **/
+/** 寃��깋 **/
 .searchform{
     width:40%;
     margin-left:auto;
@@ -241,7 +241,7 @@ span.space{
     max-width:125px;
 }
 
-/** 글쓰기 **/
+/** 湲��벐湲� **/
 label.form-label{
     display:inline-block;
     width:100px;
@@ -259,3 +259,16 @@ footer{
     margin-left:-15px;
     margin-right:-15px;
 }
+
+/********************본문***************/
+.file-box a, .file-box label{
+	margin-right:20px;
+}
+.content-box{
+	min-height:250px;
+	
+}
+
+
+
+

@@ -7,7 +7,6 @@ import java.sql.SQLException;
 public class DBConnect {
 	
 	public Connection conn = null;
-	
 	private String url = "jdbc:mysql://localhost:3306/javaboard";
 	private String option = "?useUnicode=true&characterEncoding=utf-8";
 	private String user = "root";

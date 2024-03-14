@@ -1,16 +1,18 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ page import="java.sql.Connection"%>
-<%@ page import="jspBoard.dao.DBConnect"%>
+<%@ page import="java.sql.Connection, java.util.ArrayList, jspBoard.dto.BDto, jspBoard.dao.JBoardDao, java.sql.Timestamp" %>
 <jsp:include page="inc/header.jsp" flush="true" />
 <%@ include file="inc/aside.jsp" %>
 <jsp:useBean id="db" class="jspBoard.dao.DBConnect" scope="page"/>
-<% 
-   Connection conn = db.conn;
+
+<%
+Connection conn = db.conn;
+JBoardDao dao = new JBoardDao(conn);
+ArrayList<BDto> list = dao.selectDB();
 %>
 
 
-    <section>
+   <section>
             <!-- listbox -->
             <div class="listbox">
                 <h1 class="text-center mb-5">게시판</h1>
@@ -43,52 +45,45 @@
                     </thead>
                     <tbody>
                        <!-- loop --> 
+                   <%
+                      int num = list.size(); 
+                   
+                      for(int i=0; i<list.size(); i++){
+                    	  BDto dto = list.get(i);
+                    	  int id = dto.getId();
+                    	  int depth = dto.getDepth();
+                    	  String title = dto.getTitle();
+                    	  String writer = dto.getWriter();
+                    	  int hit = dto.getHit();
+                    	  int chit = dto.getChit();
+                    	  Timestamp wdate = dto.getWdate();
+                    	  String styleDepth = "";
+                    	  if(depth > 0){
+                    		  String padding = (depth*10)+"px";
+                    		  String reicon = "<i class=\"ri-corner-down-right-line\"></i>";
+                    	      styleDepth = "<span style='display:inline-block;width:"+padding+"'></span>"+reicon+" ";
+                    	  }
+                   %>    
                        <tr>
-                           <td class="text-center">1</td>
-                           <td><a href="contents.html">제목입니다. 이곳에 제목 제목입니다. 이곳에 제목
-                            제목입니다. 이곳에 제목
-                            제목입니다. 이곳에 제목
-                            제목입니다. 이곳에 제목
-                            제목입니다. 이곳에 제목 
-                            제목입니다. 이곳에 제목
-                            </a><span>(2)</span>
+                           <td class="text-center"><%=num %></td>
+                           <td><a href="contents.jsp?id=<%=id%>">
+                               <%=styleDepth%><%=title %>
+                            </a><span></span>
+                            <!-- 
                                <i class="ri-file-image-fill"></i>
                                <i class="ri-file-hwp-fill"></i>
                                <i class="ri-file-music-fill"></i>
+                            -->   
                             </td>
                             
-                           <td class="text-center">홍길동</td>
-                           <td class="text-center">12</td>
+                           <td class="text-center"><%=writer %></td>
+                           <td class="text-center"><%=hit %></td>
                            <td class="text-center">2024.02.26</td>
                        </tr>
-                       <tr>
-                        <td class="text-center">1</td>
-                        <td><a href="#">제목입니다. 이곳에 제목</a></td>
-                        <td class="text-center">홍길동</td>
-                        <td class="text-center">12</td>
-                        <td class="text-center">2024.02.26</td>
-                       </tr>
-                       <tr>
-                        <td class="text-center">1</td>
-                        <td><a href="#">제목입니다. 이곳에 제목</a></td>
-                        <td class="text-center">홍길동</td>
-                        <td class="text-center">12</td>
-                        <td class="text-center">2024.02.26</td>
-                       </tr>
-                       <tr>
-                        <td class="text-center">1</td>
-                        <td><span class="re"></span><i class="ri-corner-down-right-line"></i><a href="#">제목입니다. 이곳에 제목</a></td>
-                        <td class="text-center">홍길동</td>
-                        <td class="text-center">12</td>
-                        <td class="text-center">2024.02.26</td>
-                       </tr>
-                       <tr>
-                        <td class="text-center">1</td>
-                        <td><span class="re"></span><span class="re"></span><i class="ri-corner-down-right-line"></i><a href="#">제목입니다. 이곳에 제목</a></td>
-                        <td class="text-center">홍길동</td>
-                        <td class="text-center">12</td>
-                        <td class="text-center">2024.02.26</td>
-                       </tr>
+                  <% 
+                        num--;
+                      } 
+                  %>     
                        <!-- /loop -->
                     </tbody>
                 </table>
@@ -143,4 +138,4 @@
             </div>
             <!-- /listbox-->
          </section>
-    <%@ include file="inc/footer.jsp" %>     
+    <%@ include file="inc/footer.jsp" %>       

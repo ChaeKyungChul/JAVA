@@ -1,34 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="Conn"/>
+		<item key="selection" value="inser"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="inser"/>
+			<item value="refid 업"/>
+			<item value="res.get"/>
+			<item value="res"/>
+			<item value="view"/>
+			<item value="con"/>
+			<item value="ok"/>
+			<item value="span"/>
+			<item value="loop"/>
+			<item value="action"/>
+			<item value="ation"/>
+			<item value="게스트"/>
 			<item value="conn"/>
 			<item value="wri"/>
 			<item value="name"/>
-			<item value="fi"/>
-			<item value="아이"/>
-			<item value="dkdl"/>
-			<item value="아이프레임이 들어갈 자"/>
-			<item value="관리"/>
-			<item value="Chat"/>
-			<item value="ch"/>
-			<item value="he"/>
-			<item value="roo"/>
-			<item value="hw"/>
-			<item value="RES2"/>
-			<item value="RES"/>
 		</list>
 		<list key="replacehistory">
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="784"/>
+		<item key="DIALOG_X_ORIGIN" value="764"/>
 		<item key="DIALOG_Y_ORIGIN" value="223"/>
 		<item key="DIALOG_WIDTH" value="288"/>
 		<item key="DIALOG_HEIGHT" value="391"/>
