@@ -961,3 +961,372 @@
 2024-03-15 17:54:06,838 [Worker-20: Launching Tomcat v9.0 Server at localhost] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
 2024-03-15 17:54:06,839 [Worker-20: Launching Tomcat v9.0 Server at localhost] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard\src\test\resources
 2024-03-15 18:00:53,983 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-03-18 09:34:41,332 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-03-18 10:06:21,057 [Worker-1: Launching Tomcat v9.0 Server at localhost] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-18 10:06:21,064 [Worker-1: Launching Tomcat v9.0 Server at localhost] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard\src\main\resources
+2024-03-18 10:06:21,066 [Worker-1: Launching Tomcat v9.0 Server at localhost] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-18 10:06:21,067 [Worker-1: Launching Tomcat v9.0 Server at localhost] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard\src\test\resources
+2024-03-18 10:06:26,009 [Worker-1: Launching Tomcat v9.0 Server at localhost] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-18 10:06:26,010 [Worker-1: Launching Tomcat v9.0 Server at localhost] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\lesson20\src\main\resources
+2024-03-18 10:06:26,011 [Worker-1: Launching Tomcat v9.0 Server at localhost] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-18 10:06:26,012 [Worker-1: Launching Tomcat v9.0 Server at localhost] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\lesson20\src\test\resources
+2024-03-18 10:25:21,724 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-03-18 10:46:31,606 [Worker-9: Launching Tomcat v9.0 Server at localhost] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: jspboard:jspboard:0.0.1-SNAPSHOT @ C:\javaworks\jspboard\pom.xml.
+2024-03-18 10:46:32,488 [Worker-9: Launching Tomcat v9.0 Server at localhost] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-18 10:46:32,489 [Worker-9: Launching Tomcat v9.0 Server at localhost] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard\src\main\resources
+2024-03-18 10:46:32,491 [Worker-9: Launching Tomcat v9.0 Server at localhost] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-18 10:46:32,493 [Worker-9: Launching Tomcat v9.0 Server at localhost] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard\src\test\resources
+2024-03-18 10:46:32,495 [Worker-9: Launching Tomcat v9.0 Server at localhost] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of jspboard
+2024-03-18 10:46:32,495 [Worker-9: Launching Tomcat v9.0 Server at localhost] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for jspboard
+2024-03-18 10:46:32,499 [Worker-9: Launching Tomcat v9.0 Server at localhost] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.maven.plugins:maven-clean-plugin:jar:2.5 is missing, no dependency information available
+2024-03-18 10:46:32,505 [Worker-9: Launching Tomcat v9.0 Server at localhost] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-18 11:49:39,073 [Worker-45: Launching Tomcat v9.0 Server at localhost] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: jspboard:jspboard:0.0.1-SNAPSHOT @ C:\javaworks\jspboard\pom.xml.
+2024-03-18 11:49:40,952 [Worker-45: Launching Tomcat v9.0 Server at localhost] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-18 11:49:40,953 [Worker-45: Launching Tomcat v9.0 Server at localhost] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard\src\main\resources
+2024-03-18 11:49:40,955 [Worker-45: Launching Tomcat v9.0 Server at localhost] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-18 11:49:40,955 [Worker-45: Launching Tomcat v9.0 Server at localhost] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard\src\test\resources
+2024-03-18 11:49:40,956 [Worker-45: Launching Tomcat v9.0 Server at localhost] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of jspboard
+2024-03-18 11:49:40,956 [Worker-45: Launching Tomcat v9.0 Server at localhost] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for jspboard
+2024-03-18 11:49:40,959 [Worker-45: Launching Tomcat v9.0 Server at localhost] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-18 12:23:25,808 [Worker-56: Launching Tomcat v9.0 Server at localhost] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-18 12:23:25,809 [Worker-56: Launching Tomcat v9.0 Server at localhost] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard\src\main\resources
+2024-03-18 12:23:25,811 [Worker-56: Launching Tomcat v9.0 Server at localhost] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-18 12:23:25,811 [Worker-56: Launching Tomcat v9.0 Server at localhost] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard\src\test\resources
+2024-03-18 13:14:10,756 [Worker-81: Launching Tomcat v9.0 Server at localhost] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-18 13:14:10,757 [Worker-81: Launching Tomcat v9.0 Server at localhost] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard\src\main\resources
+2024-03-18 13:14:10,758 [Worker-81: Launching Tomcat v9.0 Server at localhost] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-18 13:14:10,759 [Worker-81: Launching Tomcat v9.0 Server at localhost] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard\src\test\resources
+2024-03-18 13:56:55,016 [Worker-74: Launching Tomcat v9.0 Server at localhost] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-18 13:56:55,017 [Worker-74: Launching Tomcat v9.0 Server at localhost] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard\src\main\resources
+2024-03-18 13:56:55,019 [Worker-74: Launching Tomcat v9.0 Server at localhost] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-18 13:56:55,020 [Worker-74: Launching Tomcat v9.0 Server at localhost] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard\src\test\resources
+2024-03-18 14:04:34,084 [Worker-108: Launching Tomcat v9.0 Server at localhost] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-18 14:04:34,085 [Worker-108: Launching Tomcat v9.0 Server at localhost] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard\src\main\resources
+2024-03-18 14:04:34,086 [Worker-108: Launching Tomcat v9.0 Server at localhost] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-18 14:04:34,087 [Worker-108: Launching Tomcat v9.0 Server at localhost] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard\src\test\resources
+2024-03-18 14:18:22,581 [Worker-122: Launching Tomcat v9.0 Server at localhost] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-18 14:18:22,582 [Worker-122: Launching Tomcat v9.0 Server at localhost] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard\src\main\resources
+2024-03-18 14:18:22,584 [Worker-122: Launching Tomcat v9.0 Server at localhost] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-18 14:18:22,585 [Worker-122: Launching Tomcat v9.0 Server at localhost] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard\src\test\resources
+2024-03-18 14:19:48,606 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-03-18 15:19:55,438 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-03-18 15:22:57,151 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-03-18 15:33:20,289 [Worker-6: Rebuilding] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-18 15:33:20,291 [Worker-6: Rebuilding] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard\src\main\resources
+2024-03-18 15:33:20,293 [Worker-6: Rebuilding] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-18 15:33:20,294 [Worker-6: Rebuilding] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard\src\test\resources
+2024-03-18 15:33:22,292 [Worker-6: Rebuilding] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-18 15:33:22,293 [Worker-6: Rebuilding] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\lesson20\src\main\resources
+2024-03-18 15:33:22,294 [Worker-6: Rebuilding] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-18 15:33:22,295 [Worker-6: Rebuilding] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\lesson20\src\test\resources
+2024-03-18 16:36:29,203 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-03-18 16:43:00,332 [Worker-14: Rebuilding] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-18 16:43:00,333 [Worker-14: Rebuilding] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard\src\main\resources
+2024-03-18 16:43:00,335 [Worker-14: Rebuilding] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-18 16:43:00,336 [Worker-14: Rebuilding] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard\src\test\resources
+2024-03-18 17:01:45,514 [Worker-18: Enabling Maven Dependency Management] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: MemberService:MemberService:0.0.1-SNAPSHOT @ C:\javaworks\MemberService\pom.xml.
+2024-03-18 17:01:46,286 [Worker-18: Enabling Maven Dependency Management] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /MemberService/src/main/java
+2024-03-18 17:01:46,287 [Worker-18: Enabling Maven Dependency Management] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /MemberService/src/test/java
+2024-03-18 17:01:47,059 [Worker-18: Enabling Maven Dependency Management] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2024-03-18 17:01:47,252 [Worker-18: Enabling Maven Dependency Management] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: MemberService:MemberService:0.0.1-SNAPSHOT @ C:\javaworks\MemberService\pom.xml.
+2024-03-18 17:01:47,964 [Worker-18: Enabling Maven Dependency Management] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /MemberService/src/main/java
+2024-03-18 17:01:47,964 [Worker-18: Enabling Maven Dependency Management] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /MemberService/src/test/java
+2024-03-18 17:01:48,048 [Worker-18: Enabling Maven Dependency Management] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for MemberService
+2024-03-18 17:01:48,054 [Worker-18: Enabling Maven Dependency Management] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2024-03-18 17:12:37,439 [Worker-0: Launching Tomcat v9.0 Server at localhost] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-18 17:12:37,440 [Worker-0: Launching Tomcat v9.0 Server at localhost] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\MemberService\src\main\resources
+2024-03-18 17:12:37,441 [Worker-0: Launching Tomcat v9.0 Server at localhost] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-18 17:12:37,442 [Worker-0: Launching Tomcat v9.0 Server at localhost] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\MemberService\src\test\resources
+2024-03-18 17:12:37,442 [Worker-0: Launching Tomcat v9.0 Server at localhost] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of MemberService
+2024-03-18 17:12:37,443 [Worker-0: Launching Tomcat v9.0 Server at localhost] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for MemberService
+2024-03-18 17:12:37,450 [Worker-0: Launching Tomcat v9.0 Server at localhost] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.maven.plugins:maven-clean-plugin:jar:2.5 is missing, no dependency information available
+2024-03-18 17:12:37,458 [Worker-0: Launching Tomcat v9.0 Server at localhost] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-18 17:25:02,967 [Worker-30: Launching Tomcat v9.0 Server at localhost] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-18 17:25:02,967 [Worker-30: Launching Tomcat v9.0 Server at localhost] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\MemberService\src\main\resources
+2024-03-18 17:25:02,969 [Worker-30: Launching Tomcat v9.0 Server at localhost] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-18 17:25:02,969 [Worker-30: Launching Tomcat v9.0 Server at localhost] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\MemberService\src\test\resources
+2024-03-18 17:28:44,945 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-03-18 17:55:53,667 [Worker-18: Launching Tomcat v9.0 Server at localhost] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-18 17:55:53,671 [Worker-18: Launching Tomcat v9.0 Server at localhost] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\MemberService\src\main\resources
+2024-03-18 17:55:53,673 [Worker-18: Launching Tomcat v9.0 Server at localhost] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-18 17:55:53,674 [Worker-18: Launching Tomcat v9.0 Server at localhost] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\MemberService\src\test\resources
+2024-03-18 17:55:53,680 [Worker-18: Launching Tomcat v9.0 Server at localhost] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of MemberService
+2024-03-18 17:55:53,681 [Worker-18: Launching Tomcat v9.0 Server at localhost] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for MemberService
+2024-03-18 17:55:53,686 [Worker-18: Launching Tomcat v9.0 Server at localhost] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.maven.plugins:maven-clean-plugin:jar:2.5 is missing, no dependency information available
+2024-03-18 17:55:53,694 [Worker-18: Launching Tomcat v9.0 Server at localhost] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-18 17:59:17,541 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-03-18 18:01:28,947 [Worker-8: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-03-19 09:15:59,286 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-03-19 10:38:35,798 [Worker-34: Launching Tomcat v9.0 Server at localhost] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-19 10:38:35,801 [Worker-34: Launching Tomcat v9.0 Server at localhost] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard\src\main\resources
+2024-03-19 10:38:35,803 [Worker-34: Launching Tomcat v9.0 Server at localhost] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-19 10:38:35,804 [Worker-34: Launching Tomcat v9.0 Server at localhost] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard\src\test\resources
+2024-03-19 10:38:39,999 [Worker-34: Launching Tomcat v9.0 Server at localhost] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-19 10:38:40,000 [Worker-34: Launching Tomcat v9.0 Server at localhost] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\lesson20\src\main\resources
+2024-03-19 10:38:40,001 [Worker-34: Launching Tomcat v9.0 Server at localhost] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-19 10:38:40,002 [Worker-34: Launching Tomcat v9.0 Server at localhost] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\lesson20\src\test\resources
+2024-03-19 10:49:01,057 [Worker-44: Rebuilding] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-19 10:49:01,058 [Worker-44: Rebuilding] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard\src\main\resources
+2024-03-19 10:49:01,059 [Worker-44: Rebuilding] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-19 10:49:01,060 [Worker-44: Rebuilding] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard\src\test\resources
+2024-03-19 13:54:41,994 [Worker-87: Launching Tomcat v9.0 Server at localhost] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-19 13:54:42,056 [Worker-87: Launching Tomcat v9.0 Server at localhost] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard\src\main\resources
+2024-03-19 13:54:42,057 [Worker-87: Launching Tomcat v9.0 Server at localhost] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-19 13:54:42,058 [Worker-87: Launching Tomcat v9.0 Server at localhost] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard\src\test\resources
+2024-03-19 14:28:18,017 [Worker-96: Launching Tomcat v9.0 Server at localhost] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: jspboard:jspboard:0.0.1-SNAPSHOT @ C:\javaworks\jspboard2\pom.xml.
+2024-03-19 14:28:18,395 [Worker-96: Launching Tomcat v9.0 Server at localhost] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-19 14:28:18,396 [Worker-96: Launching Tomcat v9.0 Server at localhost] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard2\src\main\resources
+2024-03-19 14:28:18,397 [Worker-96: Launching Tomcat v9.0 Server at localhost] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-19 14:28:18,398 [Worker-96: Launching Tomcat v9.0 Server at localhost] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard2\src\test\resources
+2024-03-19 14:29:26,070 [Worker-92: Launching _index.jsp (8)] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-19 14:29:26,071 [Worker-92: Launching _index.jsp (8)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard2\src\main\resources
+2024-03-19 14:29:26,072 [Worker-92: Launching _index.jsp (8)] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-19 14:29:26,073 [Worker-92: Launching _index.jsp (8)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard2\src\test\resources
+2024-03-19 14:30:51,390 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-03-19 14:34:12,689 [Worker-22: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: jspboard:jspboard:0.0.1-SNAPSHOT @ C:\javaworks\jspboard\pom.xml.
+2024-03-19 14:35:44,426 [Worker-17: Launching Tomcat v9.0 Server at localhost] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-19 14:35:44,427 [Worker-17: Launching Tomcat v9.0 Server at localhost] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard\src\main\resources
+2024-03-19 14:35:44,429 [Worker-17: Launching Tomcat v9.0 Server at localhost] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-19 14:35:44,430 [Worker-17: Launching Tomcat v9.0 Server at localhost] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard\src\test\resources
+2024-03-19 14:35:44,466 [Worker-17: Launching Tomcat v9.0 Server at localhost] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-19 14:35:44,467 [Worker-17: Launching Tomcat v9.0 Server at localhost] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard2\src\main\resources
+2024-03-19 14:35:44,468 [Worker-17: Launching Tomcat v9.0 Server at localhost] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-19 14:35:44,468 [Worker-17: Launching Tomcat v9.0 Server at localhost] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard2\src\test\resources
+2024-03-19 16:58:29,863 [Worker-80: Launching _index.jsp (1)] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: jspboard:jspboard:0.0.1-SNAPSHOT @ C:\javaworks\jspboard\pom.xml.
+2024-03-19 16:58:29,932 [Worker-80: Launching _index.jsp (1)] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-19 16:58:29,933 [Worker-80: Launching _index.jsp (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard\src\main\resources
+2024-03-19 16:58:29,934 [Worker-80: Launching _index.jsp (1)] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-19 16:58:29,934 [Worker-80: Launching _index.jsp (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard\src\test\resources
+2024-03-19 16:58:29,974 [Worker-80: Launching _index.jsp (1)] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-19 16:58:29,975 [Worker-80: Launching _index.jsp (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard2\src\main\resources
+2024-03-19 16:58:29,976 [Worker-80: Launching _index.jsp (1)] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-19 16:58:29,976 [Worker-80: Launching _index.jsp (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard2\src\test\resources
+2024-03-20 09:35:23,848 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-03-20 09:52:17,534 [Worker-21: Building Project lesson22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 09:52:17,535 [Worker-21: Building Project lesson22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard\src\main\resources
+2024-03-20 09:52:17,537 [Worker-21: Building Project lesson22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 09:52:17,538 [Worker-21: Building Project lesson22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard\src\test\resources
+2024-03-20 09:52:18,770 [Worker-21: Building Project lesson22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 09:52:18,771 [Worker-21: Building Project lesson22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard2\src\main\resources
+2024-03-20 09:52:18,772 [Worker-21: Building Project lesson22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 09:52:18,773 [Worker-21: Building Project lesson22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard2\src\test\resources
+2024-03-20 10:38:07,916 [Worker-19: Cleaning all projects] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for jspboard
+2024-03-20 10:38:07,925 [Worker-19: Cleaning all projects] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for jspboard2
+2024-03-20 10:38:08,737 [Worker-26: Building Workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 10:38:08,738 [Worker-26: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard\src\main\resources
+2024-03-20 10:38:08,739 [Worker-26: Building Workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 10:38:08,740 [Worker-26: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard\src\test\resources
+2024-03-20 10:38:08,740 [Worker-26: Building Workspace] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of jspboard
+2024-03-20 10:38:08,741 [Worker-26: Building Workspace] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for jspboard
+2024-03-20 10:38:08,751 [Worker-26: Building Workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.maven.plugins:maven-clean-plugin:jar:2.5 is missing, no dependency information available
+2024-03-20 10:38:08,763 [Worker-26: Building Workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 10:38:08,829 [Worker-26: Building Workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 10:38:08,830 [Worker-26: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard2\src\main\resources
+2024-03-20 10:38:08,831 [Worker-26: Building Workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 10:38:08,832 [Worker-26: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard2\src\test\resources
+2024-03-20 10:38:08,832 [Worker-26: Building Workspace] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of jspboard2
+2024-03-20 10:38:08,832 [Worker-26: Building Workspace] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for jspboard2
+2024-03-20 10:38:08,836 [Worker-26: Building Workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 10:38:10,060 [Worker-26: Building Workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 10:38:10,061 [Worker-26: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\lesson20\src\main\resources
+2024-03-20 10:38:10,062 [Worker-26: Building Workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 10:38:10,063 [Worker-26: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\lesson20\src\test\resources
+2024-03-20 11:09:00,357 [Worker-50: Building Project lesson23] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 11:09:00,358 [Worker-50: Building Project lesson23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard\src\main\resources
+2024-03-20 11:09:00,360 [Worker-50: Building Project lesson23] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 11:09:00,361 [Worker-50: Building Project lesson23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard\src\test\resources
+2024-03-20 11:09:00,400 [Worker-50: Building Project lesson23] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 11:09:00,401 [Worker-50: Building Project lesson23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard2\src\main\resources
+2024-03-20 11:09:00,402 [Worker-50: Building Project lesson23] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 11:09:00,403 [Worker-50: Building Project lesson23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard2\src\test\resources
+2024-03-20 11:09:00,432 [Worker-50: Building Project lesson23] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 11:09:00,433 [Worker-50: Building Project lesson23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\lesson20\src\main\resources
+2024-03-20 11:09:00,435 [Worker-50: Building Project lesson23] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 11:09:00,436 [Worker-50: Building Project lesson23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\lesson20\src\test\resources
+2024-03-20 11:28:18,595 [Worker-54: Launching apache-tomcat-9.0.46 at localhost] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 11:28:18,598 [Worker-54: Launching apache-tomcat-9.0.46 at localhost] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard2\src\main\resources
+2024-03-20 11:28:18,599 [Worker-54: Launching apache-tomcat-9.0.46 at localhost] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 11:28:18,599 [Worker-54: Launching apache-tomcat-9.0.46 at localhost] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard2\src\test\resources
+2024-03-20 11:30:23,249 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-03-20 11:31:32,628 [Worker-7: Launching apache-tomcat-9.0.46 at localhost] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 11:31:32,630 [Worker-7: Launching apache-tomcat-9.0.46 at localhost] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard\src\main\resources
+2024-03-20 11:31:32,632 [Worker-7: Launching apache-tomcat-9.0.46 at localhost] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 11:31:32,633 [Worker-7: Launching apache-tomcat-9.0.46 at localhost] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard\src\test\resources
+2024-03-20 11:31:33,080 [Worker-7: Launching apache-tomcat-9.0.46 at localhost] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 11:31:33,081 [Worker-7: Launching apache-tomcat-9.0.46 at localhost] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard2\src\main\resources
+2024-03-20 11:31:33,083 [Worker-7: Launching apache-tomcat-9.0.46 at localhost] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 11:31:33,084 [Worker-7: Launching apache-tomcat-9.0.46 at localhost] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard2\src\test\resources
+2024-03-20 11:32:12,087 [Worker-1: Debug Source Lookup] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/tomcat/tomcat-util/9.0.46/tomcat-util-9.0.46-sources.jar
+2024-03-20 11:32:12,385 [Worker-1: Debug Source Lookup] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/tomcat/tomcat-util/9.0.46/tomcat-util-9.0.46-sources.jar
+2024-03-20 12:09:55,441 [Worker-18: Cleaning all projects] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for jspboard
+2024-03-20 12:09:55,449 [Worker-18: Cleaning all projects] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for jspboard2
+2024-03-20 12:09:55,859 [Worker-9: Building Workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 12:09:55,861 [Worker-9: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard\src\main\resources
+2024-03-20 12:09:55,862 [Worker-9: Building Workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 12:09:55,863 [Worker-9: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard\src\test\resources
+2024-03-20 12:09:55,863 [Worker-9: Building Workspace] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of jspboard
+2024-03-20 12:09:55,864 [Worker-9: Building Workspace] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for jspboard
+2024-03-20 12:09:55,868 [Worker-9: Building Workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.maven.plugins:maven-clean-plugin:jar:2.5 is missing, no dependency information available
+2024-03-20 12:09:55,881 [Worker-9: Building Workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 12:09:55,941 [Worker-9: Building Workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 12:09:55,942 [Worker-9: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard2\src\main\resources
+2024-03-20 12:09:55,943 [Worker-9: Building Workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 12:09:55,944 [Worker-9: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard2\src\test\resources
+2024-03-20 12:09:55,945 [Worker-9: Building Workspace] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of jspboard2
+2024-03-20 12:09:55,945 [Worker-9: Building Workspace] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for jspboard2
+2024-03-20 12:09:55,948 [Worker-9: Building Workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 12:09:56,812 [Worker-9: Building Workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 12:09:56,813 [Worker-9: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\lesson20\src\main\resources
+2024-03-20 12:09:56,814 [Worker-9: Building Workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 12:09:56,815 [Worker-9: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\lesson20\src\test\resources
+2024-03-20 12:36:34,683 [Worker-33: Cleaning all projects] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for jspboard
+2024-03-20 12:36:34,690 [Worker-33: Cleaning all projects] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for jspboard2
+2024-03-20 12:36:34,998 [Worker-38: Building Workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 12:36:34,999 [Worker-38: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard\src\main\resources
+2024-03-20 12:36:35,001 [Worker-38: Building Workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 12:36:35,001 [Worker-38: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard\src\test\resources
+2024-03-20 12:36:35,002 [Worker-38: Building Workspace] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of jspboard
+2024-03-20 12:36:35,002 [Worker-38: Building Workspace] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for jspboard
+2024-03-20 12:36:35,014 [Worker-38: Building Workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 12:36:35,059 [Worker-38: Building Workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 12:36:35,060 [Worker-38: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard2\src\main\resources
+2024-03-20 12:36:35,061 [Worker-38: Building Workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 12:36:35,062 [Worker-38: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard2\src\test\resources
+2024-03-20 12:36:35,063 [Worker-38: Building Workspace] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of jspboard2
+2024-03-20 12:36:35,063 [Worker-38: Building Workspace] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for jspboard2
+2024-03-20 12:36:35,067 [Worker-38: Building Workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 12:36:35,599 [Worker-38: Building Workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 12:36:35,599 [Worker-38: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\lesson20\src\main\resources
+2024-03-20 12:36:35,602 [Worker-38: Building Workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 12:36:35,604 [Worker-38: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\lesson20\src\test\resources
+2024-03-20 13:17:25,738 [Worker-66: Cleaning all projects] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for jspboard
+2024-03-20 13:17:25,745 [Worker-66: Cleaning all projects] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for jspboard2
+2024-03-20 13:17:26,044 [Worker-64: Building Workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 13:17:26,046 [Worker-64: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard\src\main\resources
+2024-03-20 13:17:26,048 [Worker-64: Building Workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 13:17:26,049 [Worker-64: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard\src\test\resources
+2024-03-20 13:17:26,049 [Worker-64: Building Workspace] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of jspboard
+2024-03-20 13:17:26,049 [Worker-64: Building Workspace] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for jspboard
+2024-03-20 13:17:26,065 [Worker-64: Building Workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 13:17:26,120 [Worker-64: Building Workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 13:17:26,121 [Worker-64: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard2\src\main\resources
+2024-03-20 13:17:26,122 [Worker-64: Building Workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 13:17:26,123 [Worker-64: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard2\src\test\resources
+2024-03-20 13:17:26,124 [Worker-64: Building Workspace] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of jspboard2
+2024-03-20 13:17:26,124 [Worker-64: Building Workspace] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for jspboard2
+2024-03-20 13:17:26,128 [Worker-64: Building Workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 13:17:26,599 [Worker-64: Building Workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 13:17:26,600 [Worker-64: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\lesson20\src\main\resources
+2024-03-20 13:17:26,601 [Worker-64: Building Workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 13:17:26,602 [Worker-64: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\lesson20\src\test\resources
+2024-03-20 16:10:12,674 [Worker-137: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: jspBoard:jspBoard:0.0.1-SNAPSHOT @ C:\javaworks\jspBoard\pom.xml.
+2024-03-20 16:11:43,567 [Worker-137: Cleaning all projects] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for jspBoard
+2024-03-20 16:11:43,575 [Worker-137: Cleaning all projects] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for jspboard2
+2024-03-20 16:11:43,984 [Worker-118: Building Workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 16:11:43,985 [Worker-118: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspBoard\src\main\resources
+2024-03-20 16:11:43,986 [Worker-118: Building Workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 16:11:43,987 [Worker-118: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspBoard\src\test\resources
+2024-03-20 16:11:43,988 [Worker-118: Building Workspace] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of jspBoard
+2024-03-20 16:11:43,988 [Worker-118: Building Workspace] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for jspBoard
+2024-03-20 16:11:43,997 [Worker-118: Building Workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 16:11:44,051 [Worker-118: Building Workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 16:11:44,052 [Worker-118: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard2\src\main\resources
+2024-03-20 16:11:44,053 [Worker-118: Building Workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 16:11:44,054 [Worker-118: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard2\src\test\resources
+2024-03-20 16:11:44,054 [Worker-118: Building Workspace] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of jspboard2
+2024-03-20 16:11:44,054 [Worker-118: Building Workspace] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for jspboard2
+2024-03-20 16:11:44,058 [Worker-118: Building Workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 16:11:44,945 [Worker-118: Building Workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 16:11:44,946 [Worker-118: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\lesson20\src\main\resources
+2024-03-20 16:11:44,948 [Worker-118: Building Workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 16:11:44,949 [Worker-118: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\lesson20\src\test\resources
+2024-03-20 16:16:12,150 [Worker-143: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: jspBoard:jspBoard:0.0.1-SNAPSHOT @ C:\javaworks\jspBoard\pom.xml.
+2024-03-20 16:16:18,608 [Worker-143: Cleaning all projects] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for jspBoard
+2024-03-20 16:16:18,616 [Worker-143: Cleaning all projects] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for jspboard2
+2024-03-20 16:16:18,879 [Worker-145: Building Workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 16:16:18,880 [Worker-145: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspBoard\src\main\resources
+2024-03-20 16:16:18,881 [Worker-145: Building Workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 16:16:18,882 [Worker-145: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspBoard\src\test\resources
+2024-03-20 16:16:18,882 [Worker-145: Building Workspace] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of jspBoard
+2024-03-20 16:16:18,882 [Worker-145: Building Workspace] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for jspBoard
+2024-03-20 16:16:18,886 [Worker-145: Building Workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 16:16:18,929 [Worker-145: Building Workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 16:16:18,930 [Worker-145: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard2\src\main\resources
+2024-03-20 16:16:18,931 [Worker-145: Building Workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 16:16:18,931 [Worker-145: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard2\src\test\resources
+2024-03-20 16:16:18,932 [Worker-145: Building Workspace] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of jspboard2
+2024-03-20 16:16:18,932 [Worker-145: Building Workspace] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for jspboard2
+2024-03-20 16:16:18,934 [Worker-145: Building Workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 16:16:19,296 [Worker-145: Building Workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 16:16:19,297 [Worker-145: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\lesson20\src\main\resources
+2024-03-20 16:16:19,299 [Worker-145: Building Workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 16:16:19,300 [Worker-145: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\lesson20\src\test\resources
+2024-03-20 16:23:16,463 [Worker-152: Launching apache-tomcat-9.0.46 at localhost] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 16:23:16,464 [Worker-152: Launching apache-tomcat-9.0.46 at localhost] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspBoard\src\main\resources
+2024-03-20 16:23:16,465 [Worker-152: Launching apache-tomcat-9.0.46 at localhost] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 16:23:16,466 [Worker-152: Launching apache-tomcat-9.0.46 at localhost] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspBoard\src\test\resources
+2024-03-20 16:23:16,477 [Worker-152: Launching apache-tomcat-9.0.46 at localhost] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 16:23:16,478 [Worker-152: Launching apache-tomcat-9.0.46 at localhost] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard2\src\main\resources
+2024-03-20 16:23:16,479 [Worker-152: Launching apache-tomcat-9.0.46 at localhost] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 16:23:16,480 [Worker-152: Launching apache-tomcat-9.0.46 at localhost] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard2\src\test\resources
+2024-03-20 16:25:56,897 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-03-20 16:26:40,553 [Worker-8: Launching _index.jsp (3)] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 16:26:40,555 [Worker-8: Launching _index.jsp (3)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspBoard\src\main\resources
+2024-03-20 16:26:40,556 [Worker-8: Launching _index.jsp (3)] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 16:26:40,557 [Worker-8: Launching _index.jsp (3)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspBoard\src\test\resources
+2024-03-20 16:26:41,701 [Worker-8: Launching _index.jsp (3)] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 16:26:41,702 [Worker-8: Launching _index.jsp (3)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard2\src\main\resources
+2024-03-20 16:26:41,703 [Worker-8: Launching _index.jsp (3)] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 16:26:41,704 [Worker-8: Launching _index.jsp (3)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard2\src\test\resources
+2024-03-20 16:43:19,626 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-03-20 17:00:37,904 [Worker-21: Launching _index.jsp (3)] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: jspBoard:jspBoard:0.0.1-SNAPSHOT @ C:\javaworks\jspBoard\pom.xml.
+2024-03-20 17:00:40,318 [Worker-21: Launching _index.jsp (3)] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 17:00:40,319 [Worker-21: Launching _index.jsp (3)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspBoard\src\main\resources
+2024-03-20 17:00:40,320 [Worker-21: Launching _index.jsp (3)] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 17:00:40,321 [Worker-21: Launching _index.jsp (3)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspBoard\src\test\resources
+2024-03-20 17:00:40,323 [Worker-21: Launching _index.jsp (3)] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of jspBoard
+2024-03-20 17:00:40,324 [Worker-21: Launching _index.jsp (3)] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for jspBoard
+2024-03-20 17:00:40,327 [Worker-21: Launching _index.jsp (3)] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.maven.plugins:maven-clean-plugin:jar:2.5 is missing, no dependency information available
+2024-03-20 17:00:40,332 [Worker-21: Launching _index.jsp (3)] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 17:00:40,366 [Worker-21: Launching _index.jsp (3)] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 17:00:40,367 [Worker-21: Launching _index.jsp (3)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard2\src\main\resources
+2024-03-20 17:00:40,367 [Worker-21: Launching _index.jsp (3)] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 17:00:40,368 [Worker-21: Launching _index.jsp (3)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard2\src\test\resources
+2024-03-20 17:03:35,870 [Worker-19: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: jspboard:jspboard:0.0.1-SNAPSHOT @ C:\javaworks\jspboard2\pom.xml.
+2024-03-20 17:05:25,902 [Worker-22: Launching apache-tomcat-9.0.46 at localhost] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 17:05:25,903 [Worker-22: Launching apache-tomcat-9.0.46 at localhost] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard2\src\main\resources
+2024-03-20 17:05:25,905 [Worker-22: Launching apache-tomcat-9.0.46 at localhost] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 17:05:25,906 [Worker-22: Launching apache-tomcat-9.0.46 at localhost] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard2\src\test\resources
+2024-03-20 17:06:09,936 [Worker-23: Cleaning all projects] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for jspboard2
+2024-03-20 17:06:10,979 [Worker-19: Building Workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 17:06:10,981 [Worker-19: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard2\src\main\resources
+2024-03-20 17:06:10,991 [Worker-19: Building Workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 17:06:10,992 [Worker-19: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\jspboard2\src\test\resources
+2024-03-20 17:06:10,992 [Worker-19: Building Workspace] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of jspboard2
+2024-03-20 17:06:10,992 [Worker-19: Building Workspace] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for jspboard2
+2024-03-20 17:06:10,998 [Worker-19: Building Workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 17:06:12,845 [Worker-19: Building Workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 17:06:12,846 [Worker-19: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\lesson20\src\main\resources
+2024-03-20 17:06:12,848 [Worker-19: Building Workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 17:06:12,849 [Worker-19: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\lesson20\src\test\resources
+2024-03-20 17:19:50,966 [Worker-20: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2024-03-20 17:19:51,209 [Worker-20: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: lesson20:lesson20:0.0.1-SNAPSHOT @ C:\javaworks\lesson20\pom.xml.
+2024-03-20 17:19:51,240 [Worker-20: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: jspboard:jspboard:0.0.1-SNAPSHOT @ C:\javaworks\jspboard2\pom.xml.
+2024-03-20 17:19:51,651 [Worker-20: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /jspboard2/src/main/java
+2024-03-20 17:19:51,651 [Worker-20: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /jspboard2/src/test/java
+2024-03-20 17:19:51,802 [Worker-20: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /lesson20/src
+2024-03-20 17:19:51,802 [Worker-20: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /lesson20/src/test/java because it overlaps with /lesson20/src
+2024-03-20 17:19:52,546 [Worker-20: Updating Maven Project] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for jspboard2
+2024-03-20 17:19:52,584 [Worker-20: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 1 sec
+2024-03-20 17:20:31,610 [Worker-36: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2024-03-20 17:20:31,632 [Worker-36: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2024-03-20 17:23:44,211 [Worker-38: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2024-03-20 17:23:44,232 [Worker-38: Updating Maven Project] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2024-03-20 17:23:44,233 [Worker-38: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2024-03-20 17:42:17,020 [Worker-49: Updating Maven Dependencies] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2024-03-20 17:42:49,928 [Worker-52: Launching apache-tomcat-9.0.46 at localhost] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2024-03-20 17:42:49,973 [Worker-52: Launching apache-tomcat-9.0.46 at localhost] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2024-03-20 17:42:49,996 [Worker-52: Launching apache-tomcat-9.0.46 at localhost] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 17:42:49,997 [Worker-52: Launching apache-tomcat-9.0.46 at localhost] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\lesson20\src\main\resources
+2024-03-20 17:42:49,999 [Worker-52: Launching apache-tomcat-9.0.46 at localhost] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-03-20 17:42:50,000 [Worker-52: Launching apache-tomcat-9.0.46 at localhost] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\javaworks\lesson20\src\test\resources

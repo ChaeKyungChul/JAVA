@@ -1,0 +1,52 @@
+package com.ExpDto;
+
+public class ExpDto {
+	
+	private String userid;
+	private String userpass;
+	private String usereamil;
+	private String address;
+	private String sex;
+	
+	public String getUserid() {
+		return userid;
+	}
+	
+	public void setUserid(String userid) {
+		this.userid = userid;
+	}
+	
+	public String getUserpass() {
+		return userpass;
+	}
+	
+	public void setUserpass(String userpass) {
+		this.userpass = userpass;
+	}
+	
+	public String getUsereamil() {
+		return usereamil;
+	}
+	
+	
+	public void setUsereamil(String usereamil) {
+		this.usereamil = usereamil;
+	}
+	
+	public String getAddress() {
+		return address;
+	}
+	
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	
+	public String getSex() {
+		return sex;
+	}
+	
+	public void setSex(String sex) {
+		this.sex = sex;
+	}
+	
+}

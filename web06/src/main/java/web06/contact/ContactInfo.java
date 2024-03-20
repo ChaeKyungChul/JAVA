@@ -2,7 +2,7 @@ package web06.contact;
 
 public class ContactInfo {
 	private String name;
-	private String email;
+	private String password;
 	
 	public String getName() {
 		return name;
@@ -13,11 +13,11 @@ public class ContactInfo {
 	}
 	
 	public String getEmail() {
-		return email;
+		return password;
 	}
 	
 	public void setEmail(String email) {
-		this.email = email;
+		this.password = password;
 	}
 
 }
