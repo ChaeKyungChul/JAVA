@@ -4,23 +4,38 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
+import javax.naming.InitialContext;
+import javax.naming.NamingException;
+import javax.sql.DataSource;
+
 public class DBConnect {
    public Connection conn = null;	
-   private String url = "jdbc:mysql://localhost:3306/javaboard";
-   private String option = "?useUnicode=true&characterEncoding=utf-8";
-   private String user = "root";
-   private String pass = "good6617";
+   private InitialContext initContext;
    
-   public DBConnect() {
-	  try {
-		Class.forName("com.mysql.cj.jdbc.Driver");
-        this.conn = DriverManager.getConnection(url+option, user, pass);
-	    System.out.println("dbÏ†ëÏÜç ÏÑ±Í≥µ");
-	  } catch (ClassNotFoundException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
-	  } catch (SQLException e) {
-		  e.printStackTrace();
-	  }
+   //ƒø≥ÿº« ø¨∞·«œ¥¬ ∏ﬁº“µÂ
+	public Connection getConnection()throws SQLException, NamingException { 		
+		if(conn == null || conn.isClosed()) {
+		initContext = new InitialContext();  // jndi ƒ¡≈ŸΩ∫∆Æ √ ±‚»≠
+		DataSource ds = (DataSource) initContext.lookup("java:/comp/env/jdbc/javaboard"); 	
+		//JNDIø°º≠ ¿Ã∏ß √£æ∆ø» . "java:/comp/env/" ¿Ã∏ß√£¥¬µ• ªÁøÎµ«¥¬ ¡¢µŒæÓ 
+		conn = ds.getConnection();
+		System.out.println("db¡¢º” º∫∞¯§ª");
+
+		}
+		return conn;
    }
+	//ƒø≥ÿº«¥›¥¬ ∏ﬁº“µÂ
+	
+	public void closeConnection() {
+		try {
+			if(conn != null && !conn.isClosed()) {
+				conn.close();
+				System.out.println("db∏¶ ¥›æ—Ω¿¥œ¥Ÿ.");
+			}
+		}catch(SQLException e) {
+			e.printStackTrace();
+		}finally {
+			conn = null;
+		}
+	}
 }

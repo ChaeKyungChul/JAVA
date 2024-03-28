@@ -1,30 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="userid"/>
+		<item key="selection" value="set"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
-			<item value="userid"/>
-			<item value="user"/>
-			<item value="우편"/>
-			<item value="usertel"/>
-			<item value="setU"/>
-			<item value="setad"/>
-			<item value="add"/>
-			<item value="로그인"/>
-			<item value="회원"/>
-			<item value="title"/>
-			<item value="gu"/>
-			<item value="쓰기"/>
-			<item value="hi"/>
-			<item value="최신글"/>
-			<item value="dtos"/>
+			<item value="get"/>
+			<item value="삭제"/>
+			<item value="id"/>
+			<item value="ㄱ"/>
+			<item value="글쓰기"/>
+			<item value="목록"/>
+			<item value="sess"/>
+			<item value="sess1"/>
+			<item value="sse"/>
+			<item value="ss"/>
+			<item value="sses"/>
+			<item value="호출"/>
+			<item value="환영"/>
+			<item value="admin"/>
+			<item value="AllSelectDB"/>
 		</list>
 		<list key="replacehistory">
+			<item value="set"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

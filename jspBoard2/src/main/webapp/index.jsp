@@ -5,33 +5,61 @@
                   jspBoard.dao.JBoardDao, 
                   jspBoard.dto.BDto,
                   java.sql.Timestamp,
-                  java.text.SimpleDateFormat" %> 
+                  java.text.SimpleDateFormat,
+                  java.text.NumberFormat" %>    
 <jsp:include page="inc/header.jsp" flush="true" />
 <%@ include file="inc/aside.jsp" %>
 <jsp:useBean id="db" class="jspBoard.dao.DBConnect" scope="page"/>
 <%
-    String sname = request.getParameter("searchname");
+    String sname = request.getParameter("searchname");  //검색
     String svalue = request.getParameter("searchvalue");
    
+   
+    /* 페이징을 위한 변수 */
+    int pg; //받아올 현재 페이지 번호
+    int allCount; //1. 전체 개시글 수 
+    int listCount; //2. 한 페이지에 보일 목록 수
+    int pageCount; //3. 한 페이지에 보일 페이지 수
+    int allPage;  //4. 전체 페이지 수
+    int limitPage; //4. 쿼리문으로 보낼 시작번호
+    int startPage;  //5. 시작페이지
+    int endPage;   //6. 마지막 페이지
+    
+    String cpg = request.getParameter("cpg");
+    pg = (cpg == null)?1:Integer.parseInt(cpg);  //3항 연산
+    listCount = 10;
+    pageCount = 10;
+    
+    limitPage = (pg-1)*listCount;  //(현재페이지-1)x목록수 
     Connection conn = db.conn;
     JBoardDao dao = new JBoardDao(conn);
     ArrayList<BDto> list = null;
-
+    allCount = dao.AllSelectDB();
+    allPage = (int) Math.ceil(allCount/(double) listCount);
+    
+    //시작페이지
+    startPage = ((pg-1)/pageCount) * pageCount+1;
+    
+    //마지막페이지
+    endPage = startPage + pageCount -1;
+    if(endPage > allPage) endPage = allPage;
+    
     if(sname == null || sname.trim().isEmpty()){    
-       list = dao.selectDB();
+       list = dao.selectDB(limitPage, listCount);
     }else{
-       list = dao.selectDB(sname, svalue);
+       list = dao.selectDB(limitPage, listCount, sname, svalue);
     }
- 
+
     SimpleDateFormat sdf = new SimpleDateFormat("yyyy.MM.dd");
+    NumberFormat formatter = NumberFormat.getInstance();
  %>
-    <section>
+     <section>
             <!-- listbox -->
             <div class="listbox">
                 <h1 class="text-center mb-5">게시판</h1>
                 <div class="d-flex justify-content-between py-4">
                     <div>
-                        <label>총 게시글</label> :000 / 000page
+                        <label>총 게시글</label> :<%=formatter.format(allCount) %>개 / <%=formatter.format(allPage) %>page
                     </div>
                     <div>
                         <a href="/jspBoard" class="btn btn-primary">목록</a>
@@ -58,7 +86,7 @@
                     <tbody>
                        <!-- loop --> 
                    <%
-                      int num = list.size(); 
+                      int num = allCount - limitPage; //게시글 번호
                    
                       for(int i=0; i<list.size(); i++){
                     	  BDto dto = list.get(i);
@@ -79,7 +107,7 @@
                    %>    
                        <tr>
                            <td class="text-center"><%=num %></td>
-                           <td><a href="contents.jsp?id=<%=id%>">
+                           <td><a href="contents.jsp?id=<%=id%>&cpg=<%=pg%>">
                                <%=styleDepth%><%=title %>
                             </a><span></span>
                             <!-- 
@@ -105,19 +133,44 @@
                     </div>
                     <ul class="paging">
                         <li>
-                            <a href="#"><i class="ri-arrow-left-double-line"></i></a>
+                            <a href="?cpg=1"><i class="ri-arrow-left-double-line"></i></a>
                         </li>
                         <li>
-                            <a href="#"><i class="ri-arrow-left-s-line"></i></a>
+                        <%
+                           if(startPage - 1 == 0){
+                        %>
+                            <a href="?cpg=<%=startPage%>"><i class="ri-arrow-left-s-line"></i></a>
+                        <% }else{ %>
+                            <a href="?cpg=<%=startPage-1%>"><i class="ri-arrow-left-s-line"></i></a>
+                        <% } %>
                         </li>
-                        <li><a href="#" class="active">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
+                        <%
+                        //시작페이지 6
+                        for(int i = startPage; i <= endPage; i++){
+                           if(pg == i) {
+                        	   out.println("<li><a href=\"?cpg="+i+"\" class=\"active\">"+i+"</a></li>");
+                           }else{
+                        	   out.println("<li><a href=\"?cpg="+i+"\">"+i+"</a></li>");
+                           }
+                        }
+                        //끝페이지 10
+                        %>
+                        
                         <li>
-                            <a href="#"><i class="ri-arrow-right-s-line"></i></a>
+                          <%
+                           if(endPage + 1 > allPage){
+                          %>
+                            <a href="?cpg=<%=endPage%>"><i class="ri-arrow-right-s-line"></i></a>
+                         <%
+                           }else{ 
+                         %>   
+                            <a href="?cpg=<%=endPage+1%>"><i class="ri-arrow-right-s-line"></i></a>
+                         <%
+                           }
+                         %>
                         </li>
                         <li>
-                            <a href="#"><i class="ri-arrow-right-double-line"></i></a>
+                            <a href="?cpg=<%=allPage%>"><i class="ri-arrow-right-double-line"></i></a>
                         </li>
                     </ul>
                     <div>
@@ -150,4 +203,4 @@
             </div>
             <!-- /listbox-->
          </section>
-    <%@ include file="inc/footer.jsp" %>     
+    <%@ include file="inc/footer.jsp" %>          

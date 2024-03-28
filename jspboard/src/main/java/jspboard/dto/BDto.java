@@ -4,18 +4,18 @@ import java.sql.Timestamp;
 
 public class BDto {
 	
-   private int id;
-   private int refid;
-   private int depth;
-   private int renum;
-   private String title;
-   private String content;
-   private String writer;
-   private String pass;
-   private String userid;
-   private int hit;
-   private int chit;
-   private Timestamp wdate;
+	   private int id;
+	   private int refid;
+	   private int depth;
+	   private int renum;
+	   private String title;
+	   private String content;
+	   private String writer;
+	   private String pass;
+	   private String userid;
+	   private int hit;
+	   private int chit;
+	   private Timestamp wdate;
    
 public int getId() {
 	return id;
@@ -98,3 +98,4 @@ public String toString() {
 }
      
 }
+

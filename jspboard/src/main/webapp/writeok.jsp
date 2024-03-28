@@ -7,7 +7,7 @@
 <jsp:useBean id="bDto" class="jspBoard.dto.BDto" scope="page" />
 <jsp:setProperty name="bDto" property="*" /> 
 <%
-   Connection conn = db.conn; 
+   Connection conn = db.getConnection(); 
    JBoardDao dao = new JBoardDao(conn);
    int rs = dao.insertDB(bDto);
 

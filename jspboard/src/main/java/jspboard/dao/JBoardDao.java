@@ -13,6 +13,7 @@ import jspBoard.dto.BDto;
 public class JBoardDao {
  
 	PreparedStatement pstmt = null;
+	Statement stmt = null;
 	ResultSet res = null;
 	Connection conn;
 	
@@ -20,8 +21,51 @@ public class JBoardDao {
     	this.conn = conn;
     }
     
+    public int AllSelectDB() {
+    	int rs = 0;
+    	String sql = "select count(*) from jboard";   	
+    	try {
+    		 stmt = conn.createStatement();
+    		 res = stmt.executeQuery(sql);
+    		    if(res.next()) {
+    		    	rs = res.getInt(1);
+    		 }
+    	}catch(SQLException e) {
+    		e.printStackTrace();
+    	} finally {
+    		try {
+    		   if(res != null) res.close();
+    		   if(stmt != null) stmt.close();
+    		}catch(SQLException e) {e.printStackTrace();}   
+    	}
+    	return rs;
+    }
+    
+    public int AllSelectDB(String sname, String svalue) {
+    	int rs = 0;
+    	String sql = "select count(*) from jboard where "+ sname +" LIKE ?";   	
+    	try {
+    		 pstmt = conn.prepareStatement(sql);
+       	     pstmt.setString(1, "%"+svalue+"%");
+    		 res = pstmt.executeQuery();
+    		 if(res.next()) {
+    		  	rs = res.getInt(1);
+    		 }
+    	}catch(SQLException e) {
+    		e.printStackTrace();
+    	} finally {
+    		try {
+    		   if(res != null) res.close();
+    		   if(pstmt != null) pstmt.close();
+    		}catch(SQLException e) {e.printStackTrace();}   
+    	}
+    	return rs;
+    }
+    
+    
+    
     //select
-    public ArrayList<BDto> selectDB(){
+    public ArrayList<BDto> selectDB(int limitPage, int listCount){
     	
     	ArrayList<BDto> dtos = new ArrayList<>();
    
@@ -29,8 +73,8 @@ public class JBoardDao {
     			+ " limit ?, ?";
     	try {
     	  pstmt = conn.prepareStatement(sql);
-    	  pstmt.setInt(1, 0);
-    	  pstmt.setInt(2, 20);
+    	  pstmt.setInt(1, limitPage);
+    	  pstmt.setInt(2, listCount);
     	  	  
     	  res = pstmt.executeQuery();
     	
@@ -76,7 +120,7 @@ public class JBoardDao {
     }
         
  //select overload
- public ArrayList<BDto> selectDB(String name, String value){
+ public ArrayList<BDto> selectDB(int limitPage, int listCount, String name, String value){
     	
     	ArrayList<BDto> dtos = new ArrayList<>();
    
@@ -86,8 +130,9 @@ public class JBoardDao {
     	try {
     	  pstmt = conn.prepareStatement(sql);
     	  pstmt.setString(1, "%"+value+"%");
-    	  pstmt.setInt(2, 0);
-    	  pstmt.setInt(3, 20);
+    	  pstmt.setInt(2, limitPage);
+    	  pstmt.setInt(3, listCount);
+    
     	  System.out.println(pstmt);	  
     	  res = pstmt.executeQuery();
     	
@@ -132,7 +177,7 @@ public class JBoardDao {
     	return dtos;
     }
     
-    //ë¹„ë²ˆê²€ì¦
+    //ºñ¹ø°ËÁõ
     public int findPass(String id, String pass) { 
 
     	int nid = Integer.parseInt(id);
@@ -159,15 +204,14 @@ public class JBoardDao {
     	return result;
     }
  
-    //ì‚­ì œ
-    public int deleteDB(String id, String pass) {
+    //»èÁ¦
+    public int deleteDB(String id) {
     	int nid = Integer.parseInt(id);
     	int result = 0;
-    	String sql = "delete from jboard where id=? and pass=?";
+    	String sql = "delete from jboard where id=?";
     	try {
 			pstmt = conn.prepareStatement(sql);
 	    	pstmt.setInt(1, nid);
-	    	pstmt.setString(2, pass);
 	        result = pstmt.executeUpdate();
 	        
 		} catch (SQLException e) {
@@ -229,7 +273,7 @@ public class JBoardDao {
     	return bDto;
     }
     
-    //ì“°ê¸°
+    //¾²±â
     public int insertDB(BDto dto) {
     	int num = 0;
     	String sql = "insert into jboard ( depth,  title, content, writer, pass, userid) values (  ?, ?, ?, ?, ?, ?)";
@@ -246,7 +290,7 @@ public class JBoardDao {
             	pstmt.setString(6, "GUEST");
             }
             pstmt.executeUpdate();
-            res = pstmt.getGeneratedKeys(); //ìž…ë ¥ í›„ auto increment ê°’ì„ ë°˜í™˜ ë°›ìŒ 	
+            res = pstmt.getGeneratedKeys(); //ÀÔ·Â ÈÄ auto increment °ªÀ» ¹ÝÈ¯ ¹ÞÀ½ 	
               if(res.next()) {
             	num = res.getInt(1);            
              }
@@ -270,7 +314,7 @@ public class JBoardDao {
     	return num;
     }
     
-    //ì—…ë°ì´íŠ¸
+    //¾÷µ¥ÀÌÆ®
     public int updateDB(int id, int num, String column) {
         int rs = 0;
         String sql = "update jboard set "+ column +"=? where id=?";
@@ -317,7 +361,7 @@ public class JBoardDao {
     }
     
     
-    //ì—…ë°ì´íŠ¸db ì˜¤ë²„ë¡œë“œ
+    //¾÷µ¥ÀÌÆ®db ¿À¹ö·Îµå
     public int updateDB(BDto dto) {
         int rs = 0;
         String sql = "update jboard set writer = ? , pass = ?, title =?, content=? where id=?";
@@ -343,7 +387,7 @@ public class JBoardDao {
     	return rs;
     }
     
-    //ê¸€ ë²ˆí˜¸ì¦ê°€ ì—…ë°ì´íŠ¸
+    //±Û ¹øÈ£Áõ°¡ ¾÷µ¥ÀÌÆ®
     public int updateDB(int refid, int renum) {
     	String sql = "update jboard set renum = renum + 1 where refid=? and renum > ?";
     	int rs = 0;

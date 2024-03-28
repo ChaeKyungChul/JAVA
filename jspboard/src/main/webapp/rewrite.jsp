@@ -10,11 +10,13 @@
    String refid = request.getParameter("refid");
    String depth = request.getParameter("depth");
    String renum = request.getParameter("renum");
+   String cpg = request.getParameter("cpg");
+   if(cpg == null) cpg="1";
 %>
          <section>
                 <div class="write">
                     <h2 class="text-center mt-4 mb-5 pb-4">답글 쓰기</h2>
-                    <form action="rewriteok.jsp" name="writeform" id="writeform" class="writeform row" method="post">
+                    <form action="insert" name="writeform" id="writeform" class="writeform row" method="post">
                         <!-- 게스트일때 적용 -->
                         <div class="col-12 row">
                             <div class="col-6 row form-group">
@@ -43,6 +45,8 @@
                         <input type="hidden" name="refid" value="<%=refid %>" />
                         <input type="hidden" name="depth" value="<%=depth %>" />
                         <input type="hidden" name="renum" value="<%=renum %>" />
+                        <input type="hidden" name="cpg" value="<%=cpg %>" />
+                        <input type="hidden" name="mode" value="rewrite" />
                      </form>
                 </div>
                 

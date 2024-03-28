@@ -9,13 +9,13 @@ public class DBConnect {
    private String url = "jdbc:mysql://localhost:3306/javaboard";
    private String option = "?useUnicode=true&characterEncoding=utf-8";
    private String user = "root";
-   private String pass = "good6617";
+   private String pass = "dufrhdgkwk10@";
    
    public DBConnect() {
 	  try {
 		Class.forName("com.mysql.cj.jdbc.Driver");
         this.conn = DriverManager.getConnection(url+option, user, pass);
-	    System.out.println("db鞝戩啀 靹标车");
+	    System.out.println("db立加 己傍");
 	  } catch (ClassNotFoundException e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();

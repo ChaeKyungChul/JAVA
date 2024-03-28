@@ -1,0 +1,5 @@
+jspBoard\dto\MDto.class
+jspBoard\dao\DBConnect.class
+jspBoard\dao\JBoardDao.class
+jspBoard\dao\MembersDao.class
+jspBoard\dto\BDto.class

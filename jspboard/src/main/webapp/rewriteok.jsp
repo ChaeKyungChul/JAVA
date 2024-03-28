@@ -7,7 +7,8 @@
 <jsp:useBean id="bDto" class="jspBoard.dto.BDto" scope="page" />
 <jsp:setProperty name="bDto" property="*" /> 
 <%
-   Connection conn = db.conn; 
+   String cpg = request.getParameter("cpg");
+   Connection conn = db.getConnection(); 
    JBoardDao dao = new JBoardDao(conn);
    if(bDto.getDepth() > 0){
       bDto.setRefid(bDto.getRefid());
@@ -29,7 +30,7 @@
 
 <script>
   alert("글을 등록했습니다.");
-  location.href="./index.jsp";
+  location.href="./index.jsp?cpg=<%=cpg%>";
 </script>
 
 </head>

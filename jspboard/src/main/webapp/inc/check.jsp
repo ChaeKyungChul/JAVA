@@ -5,7 +5,7 @@
 
 <% request.setCharacterEncoding("utf-8"); 
    String mode = request.getParameter("mode");
-   Connection conn = db.conn;
+   Connection conn = db.getConnection();
    MembersDao dao = new MembersDao(conn);
    
    String uname, column;

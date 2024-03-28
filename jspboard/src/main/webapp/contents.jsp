@@ -1,22 +1,29 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ page import="java.sql.*, jspBoard.dao.*, jspBoard.dto.BDto,java.text.SimpleDateFormat" %>    
+<%@ page import="jspBoard.service.*, 
+                jspBoard.dto.BDto,
+                java.text.SimpleDateFormat" %>  
+                  
 <%@ include file="inc/header.jsp" %>
 <%@ include file="inc/aside.jsp" %>
-<%  
-   Cookie[] cookies = request.getCookies();
+<%   
+   HttpSession sess2 = request.getSession(true);
+   Cookie[] cooks2 = request.getCookies();
+
    String id = request.getParameter("id"); 
+   String cpg = request.getParameter("cpg");
+   if(cpg == null) cpg = "1";
 
    SimpleDateFormat sdf = new SimpleDateFormat("yyyy년 MM월 dd일 hh시 mm분 ss초");
-   DBConnect db = new DBConnect(); //db 접속
-   Connection conn = db.conn; 
-   JBoardDao dao = new JBoardDao(conn);  //viewDB()메소드를 쓰기위해 dao 객체생성
-   BDto dto = new BDto(); //viewDB() 리턴 타입인 dto를 받기 위해 dto 객체 생성
-   BDto rs = dao.viewDB(id); 
+  
+   DbWorks db = new DbWorks();
+   db.setId(id);
+   BDto rs = db.getSelectOne();
+   
    Boolean addCook = true;
    
-   if((cookies != null) && (cookies.length>0)){
-	  for(Cookie cook:cookies){
+   if((cooks2 != null) && (cooks2.length>0)){
+	  for(Cookie cook:cooks2){
 		 if(cook.getName().equals("cid") && cook.getValue().equals(id)){
 			 addCook = false;
 		 }
@@ -24,7 +31,7 @@
    }
    if(addCook){ 
       int addHit = rs.getHit() + 1;
-      dao.updateDB(rs.getId(), addHit, "hit");
+      db.getUpdate(addHit);
       //쿠키생성
       Cookie cookie = new Cookie("cid", id);
       cookie.setMaxAge(600);
@@ -55,8 +62,8 @@
           </div>
           
           <div class="my-5 pt-5 text-right">
-             <a href="./" class="btn btn-primary mr-3">목록</a>
-             <a href="rewrite.jsp?id=<%=id %>&refid=<%=rs.getRefid() %>&depth=<%=rs.getDepth() %>&renum=<%=rs.getRenum() %>" class="btn btn-primary">답글쓰기</a>
+             <a href="./?cpg=<%=cpg %>" class="btn btn-primary mr-3">목록</a>
+             <a href="rewrite.jsp?id=<%=id %>&refid=<%=rs.getRefid() %>&depth=<%=rs.getDepth() %>&renum=<%=rs.getRenum() %>&cpg=<%=cpg %>" class="btn btn-primary">답글쓰기</a>
              <a href="pass.jsp?id=<%=id %>&mode=edit" class="btn btn-primary">수정</a>
              <a href="pass.jsp?id=<%=id %>&mode=del" class="btn btn-danger">삭제</a>                      
           </div>

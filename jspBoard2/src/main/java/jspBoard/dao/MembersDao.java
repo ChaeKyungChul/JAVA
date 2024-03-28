@@ -9,17 +9,17 @@ import jspBoard.dto.MDto;
 
 public class MembersDao {
 
-	//í•„ë“œ
+	//ÇÊµå
 	PreparedStatement pstmt = null;
 	ResultSet rs = null;
 	Connection conn;
 	
-	//ìƒì„±ìì—ì„œ db ì ‘ì†
+	//»ı¼ºÀÚ¿¡¼­ db Á¢¼Ó
 	public MembersDao(Connection conn) {
 		this.conn = conn;
 	}
 
-	//íšŒì›ê°€ì…
+	//È¸¿ø°¡ÀÔ
 	public int insertDB(MDto dto) {
 		int num = 0;
 		String sql = "insert into members "
@@ -51,7 +51,7 @@ public class MembersDao {
 		return num;
 	}
 	
-	//íšŒì›ì¤‘ë³µ ê²€ì¦
+	//È¸¿øÁßº¹ °ËÁõ
 	public boolean findUser(String column, String uname) {
 		boolean res = true;
 		String sql = "select * from members where "+ column + "= ?";

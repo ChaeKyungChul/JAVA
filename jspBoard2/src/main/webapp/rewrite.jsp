@@ -10,6 +10,8 @@
    String refid = request.getParameter("refid");
    String depth = request.getParameter("depth");
    String renum = request.getParameter("renum");
+   String cpg = request.getParameter("cpg");
+   if(cpg == null) cpg="1";
 %>
          <section>
                 <div class="write">
@@ -43,6 +45,7 @@
                         <input type="hidden" name="refid" value="<%=refid %>" />
                         <input type="hidden" name="depth" value="<%=depth %>" />
                         <input type="hidden" name="renum" value="<%=renum %>" />
+                        <input type="hidden" name="cpg" value="<%=cpg %>" />
                      </form>
                 </div>
                 

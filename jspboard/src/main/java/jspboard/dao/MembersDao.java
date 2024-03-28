@@ -9,18 +9,18 @@ import jspBoard.dto.MDto;
 
 public class MembersDao {
 
-	//í•„ë“œ
+	//ÇÊµå
 	PreparedStatement pstmt = null;
 	ResultSet rs = null;
 	Connection conn;
 	
-	//ìƒì„±ìì—ì„œ db ì ‘ì†
+	//»ı¼ºÀÚ¿¡¼­ db Á¢¼Ó
 	public MembersDao(Connection conn) {
 		this.conn = conn;
 	}
 
-	//íšŒì›ê°€ì…
-	public int insertDB(MDto dto) {
+	//È¸¿ø°¡ÀÔ
+	public int insertDB(MDto dto) {  
 		int num = 0;
 		String sql = "insert into members "
 				+ " (userid, userpass, username, useremail, usertel, zipcode, addr1, addr2, userlink) "
@@ -50,8 +50,37 @@ public class MembersDao {
 		}
 		return num;
 	}
+	//È¸¿ø ·Î±×ÀÎ
+	public MDto login(String userid, String userpass) {
+		String sql = "select * from members where userid=? and userpass=?";
+		MDto dto = new MDto();
+		try {
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, userid);
+			pstmt.setString(2, userpass);
+			rs = pstmt.executeQuery();
+			if(rs.next()) {		
+			dto.setId(rs.getInt("id"));
+			dto.setUserid(rs.getString("userid"));
+			dto.setUseremail(rs.getString("useremail"));
+			dto.setUsername(rs.getString("username"));
+			dto.setRole(rs.getString("role"));
+			}
+		}catch(SQLException e) {
+			e.printStackTrace();
+	    }finally {
+			  try {
+					if(pstmt != null) pstmt.close();
+					if(rs != null) rs.close();
+				  } catch (SQLException e) {
+					  e.printStackTrace();
+				  }
+	    }
+		return dto;
+	  }
+		
 	
-	//íšŒì›ì¤‘ë³µ ê²€ì¦
+	//È¸¿øÁßº¹ °ËÁõ
 	public boolean findUser(String column, String uname) {
 		boolean res = true;
 		String sql = "select * from members where "+ column + "= ?";
@@ -75,5 +104,46 @@ public class MembersDao {
 		//System.out.println(res);
 		return res;
 	}
+
+	//È¸¿øÁ¤º¸ ¾÷µ¥ÀÌÆ®
+	public int updateDB(MDto dto) {
+	    int num = 0;
+	    String sql = "UPDATE members SET userpass = ?, username = ?, useremail = ?, usertel = ?, zipcode = ?, addr1 = ?, addr2 = ?, userlink = ? WHERE userid = ?";
+	    try {
+	        pstmt = conn.prepareStatement(sql);
+	        pstmt.setString(1, dto.getUserpass());
+	        pstmt.setString(2, dto.getUsername());
+	        pstmt.setString(3, dto.getUseremail());
+	        pstmt.setString(4, dto.getUsertel());
+	        pstmt.setInt(5, dto.getZipcode());
+	        pstmt.setString(6, dto.getAddr1());
+	        pstmt.setString(7, dto.getAddr2());
+	        pstmt.setString(8, dto.getUserlink());
+	        pstmt.setString(9, dto.getUserid());
+	        System.out.println(pstmt);
+	        num = pstmt.executeUpdate();
+	    } catch(SQLException e) {
+	    	System.out.println("È¸¿øÁ¤º¸¼öÁ¤¿Ï·á");
+	        e.printStackTrace();        
+	    } finally {
+	        try {
+	            if(pstmt != null) pstmt.close();
+	        } catch (SQLException e) {
+	            e.printStackTrace();
+	        }
+	    }
+	    return num;
+	}
+
 	
-}
+
+	
+
+	
+	}
+	
+
+
+  
+
+

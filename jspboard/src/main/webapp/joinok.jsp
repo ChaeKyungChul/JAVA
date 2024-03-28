@@ -8,7 +8,7 @@
 <jsp:setProperty name="mDto" property="*" /> 
 
 <%
-   Connection conn = db.conn; 
+   Connection conn = db.getConnection(); 
    MembersDao dao = new MembersDao(conn);
    int rs = dao.insertDB(mDto);
 
