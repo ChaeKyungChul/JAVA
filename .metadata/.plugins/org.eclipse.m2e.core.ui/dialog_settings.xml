@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\javaworks\lesson25"/>
 			<item value="C:\javaworks\My Fistweb"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -26,10 +27,9 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="jspBoard"/>
+			<item value="org."/>
 		</list>
 		<list key="groupId">
-			<item value="jspBoard"/>
 		</list>
 		<list key="artifactId">
 		</list>
@@ -47,12 +47,10 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
-			<item value="jspBoard"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="jspBoard"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

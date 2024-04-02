@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>파일 업로드</title>
+<style>
+ ul{
+   list-style-type:none;
+   margin:0;
+   padding:0;
+   width:600px;
+   margin:0 auto;
+ }
+ li{
+   padding-top:10px;
+   padding-bottom:10px;
+ }
+ input[type=text], input[type=file]{
+   padding:10px;
+   border:1px solid #ddd;
+   width:100%;
+ }
+ label{
+   display:block;
+   margin-bottom:5px;
+   font-weight:bold;
+ }
+ .text-center{
+   text-align:center;
+ }
+</style>
+</head>
+<body>
+<h1 class="text-center">cos를 이용한 업로드 구현</h1>
+<form name="form" action="upload" method="post" enctype="multipart/form-data">
+
+   <ul>
+     <li><label>제목</label>
+         <input type="text" name="title">
+     </li>
+     <li>
+       <label>파일1</label>
+       <input type="file" name="file1">
+     </li>
+          <li>
+       <label>파일2</label>
+       <input type="file" name="file2">
+     </li>
+     <li class="text-center">
+        <input type="submit" value=" 전 송 ">
+        <input type="reset" value=" 취 소 " >
+     </li>
+   </ul>
+
+</form>
+</body>
+</html>

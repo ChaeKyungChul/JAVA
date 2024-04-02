@@ -20,7 +20,7 @@ public class MembersDao {
 	}
 
 	//회원가입
-	public int insertDB(MDto dto) {  
+	public int insertDB(MDto dto) {
 		int num = 0;
 		String sql = "insert into members "
 				+ " (userid, userpass, username, useremail, usertel, zipcode, addr1, addr2, userlink) "
@@ -50,24 +50,25 @@ public class MembersDao {
 		}
 		return num;
 	}
-	//회원 로그인
+	
+	//회원로그인
 	public MDto login(String userid, String userpass) {
 		String sql = "select * from members where userid=? and userpass=?";
-		MDto dto = new MDto();
-		try {
-			pstmt = conn.prepareStatement(sql);
-			pstmt.setString(1, userid);
-			pstmt.setString(2, userpass);
-			rs = pstmt.executeQuery();
-			if(rs.next()) {		
-			dto.setId(rs.getInt("id"));
-			dto.setUserid(rs.getString("userid"));
-			dto.setUseremail(rs.getString("useremail"));
-			dto.setUsername(rs.getString("username"));
-			dto.setRole(rs.getString("role"));
-			}
-		}catch(SQLException e) {
-			e.printStackTrace();
+	    MDto dto = new MDto();
+	    try {
+	    	pstmt = conn.prepareStatement(sql);
+	    	pstmt.setString(1, userid);
+	    	pstmt.setString(2, userpass);
+	    	rs = pstmt.executeQuery();
+	    	if(rs.next()) {
+	    	  dto.setId(rs.getInt("id"));
+	    	  dto.setUserid(rs.getString("userid"));
+	    	  dto.setUseremail(rs.getString("useremail"));
+	    	  dto.setUsername(rs.getString("username"));
+	    	  dto.setRole(rs.getString("role"));
+	    	}
+	    }catch(SQLException e) {
+	    	e.printStackTrace();
 	    }finally {
 			  try {
 					if(pstmt != null) pstmt.close();
@@ -75,10 +76,9 @@ public class MembersDao {
 				  } catch (SQLException e) {
 					  e.printStackTrace();
 				  }
-	    }
+				}
 		return dto;
-	  }
-		
+	}
 	
 	//회원중복 검증
 	public boolean findUser(String column, String uname) {
@@ -104,43 +104,9 @@ public class MembersDao {
 		//System.out.println(res);
 		return res;
 	}
-
-	//회원정보 업데이트
-	public int updateDB(MDto dto) {
-	    int num = 0;
-	    String sql = "UPDATE members SET userpass = ?, username = ?, useremail = ?, usertel = ?, zipcode = ?, addr1 = ?, addr2 = ?, userlink = ? WHERE userid = ?";
-	    try {
-	        pstmt = conn.prepareStatement(sql);
-	        pstmt.setString(1, dto.getUserpass());
-	        pstmt.setString(2, dto.getUsername());
-	        pstmt.setString(3, dto.getUseremail());
-	        pstmt.setString(4, dto.getUsertel());
-	        pstmt.setInt(5, dto.getZipcode());
-	        pstmt.setString(6, dto.getAddr1());
-	        pstmt.setString(7, dto.getAddr2());
-	        pstmt.setString(8, dto.getUserlink());
-	        pstmt.setString(9, dto.getUserid());
-	        System.out.println(pstmt);
-	        num = pstmt.executeUpdate();
-	    } catch(SQLException e) {
-	    	System.out.println("회원정보수정완료");
-	        e.printStackTrace();        
-	    } finally {
-	        try {
-	            if(pstmt != null) pstmt.close();
-	        } catch (SQLException e) {
-	            e.printStackTrace();
-	        }
-	    }
-	    return num;
-	}
-
 	
+}
 
-	
-
-	
-	}
 	
 
 

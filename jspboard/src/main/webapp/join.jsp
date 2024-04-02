@@ -113,8 +113,8 @@ function dPostcode() {
                             <button class="btn btn-danger px-5 mx-2" type="reset">취소</button>
                             <button class="btn btn-primary px-5 mx-2" type="submit">전송</button>
                         </div>
+         
                         <input type="hidden" name="mode" value="join" />
-                
                     </div>
                 </form>
        

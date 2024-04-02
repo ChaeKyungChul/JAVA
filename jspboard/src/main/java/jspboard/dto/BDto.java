@@ -4,19 +4,26 @@ import java.sql.Timestamp;
 
 public class BDto {
 	
-	   private int id;
-	   private int refid;
-	   private int depth;
-	   private int renum;
-	   private String title;
-	   private String content;
-	   private String writer;
-	   private String pass;
-	   private String userid;
-	   private int hit;
-	   private int chit;
-	   private Timestamp wdate;
+   private int id;
+   private int refid;
+   private int depth;
+   private int renum;
+   private String title;
+   private String content;
+   private String writer;
+   private String pass;
+   private String userid;
+   private int hit;
+   private int chit;
+   private Timestamp wdate;
+   private String imnum;
    
+public String getImnum() {
+	return imnum;
+}
+public void setImnum(String imnum) {
+	this.imnum = imnum;
+}
 public int getId() {
 	return id;
 }
@@ -89,13 +96,13 @@ public Timestamp getWdate() {
 public void setWdate(Timestamp wdate) {
 	this.wdate = wdate;
 }
-
 @Override
 public String toString() {
 	return "BDto [id=" + id + ", refid=" + refid + ", depth=" + depth + ", renum=" + renum + ", title=" + title
 			+ ", content=" + content + ", writer=" + writer + ", pass=" + pass + ", userid=" + userid + ", hit=" + hit
-			+ ", chit=" + chit + ", wdate=" + wdate + "]";
+			+ ", chit=" + chit + ", wdate=" + wdate + ", imnum=" + imnum + "]";
 }
-     
+    
 }
+
 

@@ -50,7 +50,7 @@
     <section>
             <!-- listbox -->
             <div class="listbox">
-                <h1 class="text-center mb-5">게시판</h1>
+                <h1 class="text-center mb-5">게시판z</h1>
                 <div class="d-flex justify-content-between py-4">
                     <div>
                         <label>총 게시글</label> :<%=formatter.format(allCount) %>개 / <%=formatter.format(myPage.getTotalPages()) %>page

@@ -12,7 +12,6 @@
 %>
         <form id="gopage" action="edit.jsp" method="post">
            <input type="hidden" name="id" value="<%=id %>">
-           
         </form>
         <script>
            this.document.getElementById("gopage").submit();

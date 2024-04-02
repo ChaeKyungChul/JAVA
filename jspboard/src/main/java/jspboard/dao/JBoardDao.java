@@ -91,6 +91,7 @@ public class JBoardDao {
     		 int hit = res.getInt("hit");
     		 int chit = res.getInt("chit");
     		 Timestamp wdate = res.getTimestamp("wdate");
+    		 String imnum = res.getString("imnum");
     		 
     		 BDto bDto = new BDto();
     		 bDto.setId(id);
@@ -105,6 +106,7 @@ public class JBoardDao {
     		 bDto.setHit(hit);
     		 bDto.setChit(chit);
     		 bDto.setWdate(wdate);
+    		 bDto.setImnum(imnum);
     		 dtos.add(bDto);
     	  }
     	} catch(SQLException e) {
@@ -149,6 +151,7 @@ public class JBoardDao {
     		 int hit = res.getInt("hit");
     		 int chit = res.getInt("chit");
     		 Timestamp wdate = res.getTimestamp("wdate");
+    		 String imnum = res.getString("imnum");
     		 
     		 BDto bDto = new BDto();
     		 bDto.setId(id);
@@ -163,6 +166,7 @@ public class JBoardDao {
     		 bDto.setHit(hit);
     		 bDto.setChit(chit);
     		 bDto.setWdate(wdate);
+    		 bDto.setImnum(imnum);
     		 dtos.add(bDto);
     	  }
     	} catch(SQLException e) {
@@ -247,6 +251,7 @@ public class JBoardDao {
 	    		int hit = res.getInt("hit");
 	    		int chit = res.getInt("chit");
 	    		Timestamp wdate = res.getTimestamp("wdate");
+	    		String imnum = res.getString("imnum");
 	    		
 	    		bDto.setId(id);
 	    		bDto.setRefid(refid);
@@ -260,6 +265,7 @@ public class JBoardDao {
 	    		bDto.setHit(hit);
 	    		bDto.setChit(chit);
 	    		bDto.setWdate(wdate);
+	    		bDto.setImnum(imnum);
 			}
 			
 		} catch (SQLException e) {
@@ -276,7 +282,7 @@ public class JBoardDao {
     //쓰기
     public int insertDB(BDto dto) {
     	int num = 0;
-    	String sql = "insert into jboard ( depth,  title, content, writer, pass, userid) values (  ?, ?, ?, ?, ?, ?)";
+    	String sql = "insert into jboard ( depth,  title, content, writer, pass, userid, imnum) values (  ?, ?, ?, ?, ?, ?, ?)";
     	try {
     		pstmt = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
     		pstmt.setInt(1, dto.getDepth());  	
@@ -289,6 +295,7 @@ public class JBoardDao {
             }else {
             	pstmt.setString(6, "GUEST");
             }
+            pstmt.setString(7, dto.getImnum());
             pstmt.executeUpdate();
             res = pstmt.getGeneratedKeys(); //입력 후 auto increment 값을 반환 받음 	
               if(res.next()) {
