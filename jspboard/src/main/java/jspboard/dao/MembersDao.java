@@ -9,17 +9,17 @@ import jspBoard.dto.MDto;
 
 public class MembersDao {
 
-	//ÇÊµå
+	//í•„ë“œ
 	PreparedStatement pstmt = null;
 	ResultSet rs = null;
 	Connection conn;
 	
-	//»ı¼ºÀÚ¿¡¼­ db Á¢¼Ó
+	//ìƒì„±ìì—ì„œ db ì ‘ì†
 	public MembersDao(Connection conn) {
 		this.conn = conn;
 	}
 
-	//È¸¿ø°¡ÀÔ
+	//íšŒì›ê°€ì…
 	public int insertDB(MDto dto) {
 		int num = 0;
 		String sql = "insert into members "
@@ -51,7 +51,7 @@ public class MembersDao {
 		return num;
 	}
 	
-	//È¸¿ø·Î±×ÀÎ
+	//íšŒì›ë¡œê·¸ì¸
 	public MDto login(String userid, String userpass) {
 		String sql = "select * from members where userid=? and userpass=?";
 	    MDto dto = new MDto();
@@ -80,7 +80,7 @@ public class MembersDao {
 		return dto;
 	}
 	
-	//È¸¿øÁßº¹ °ËÁõ
+	//íšŒì›ì¤‘ë³µ ê²€ì¦
 	public boolean findUser(String column, String uname) {
 		boolean res = true;
 		String sql = "select * from members where "+ column + "= ?";
@@ -106,10 +106,3 @@ public class MembersDao {
 	}
 	
 }
-
-	
-
-
-  
-
-

@@ -16,6 +16,7 @@
    db.setId(id);
    BDto rs = db.getSelectOne();
 %>
+
          <section>
                 <div class="write">
                     <h2 class="text-center mt-4 mb-5 pb-4">글수정</h2>
@@ -44,9 +45,8 @@
                             <a href="index.html" class="btn btn-danger px-5 mx-2">취소</a>
                             <button class="btn btn-primary px-5 mx-2" type="submit">수정하기</button>
                         </div>
-                        <input type="hidden" name="id" value="<%=rs.getId() %>">                  
-                       
-                     
+                        <input type="hidden" name="id" value="<%=rs.getId()%>"> 
+      
                      </form>
                 </div>
                 

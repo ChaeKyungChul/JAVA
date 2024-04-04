@@ -15,8 +15,10 @@ $(function(){
    });
    
    function sendData(file) {
+      const imnum = $("#imnum").val();
       const data = new FormData();
       data.append("file", file);
+      data.append("imnum", imnum);
       $.ajax({
          url: "upload",
          type: "post",
@@ -55,4 +57,4 @@ $(function(){
       });
    }
    
-});    
+});

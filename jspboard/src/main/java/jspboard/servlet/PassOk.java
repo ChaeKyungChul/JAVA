@@ -25,7 +25,7 @@ public class PassOk extends HttpServlet {
 		 int result = 0;
 		 DBConnect db = new DBConnect();
 		 Connection conn;
-		
+		 
 		 try {
 			conn = db.getConnection();
 			JBoardDao dao = new JBoardDao(conn);
@@ -41,9 +41,9 @@ public class PassOk extends HttpServlet {
 			 RequestDispatcher reqDispatcher = req.getRequestDispatcher("passno.jsp"); 
 			 reqDispatcher.forward(req, res);
 		 }else {
-			 if("edit".equals(mode)) {				
+			 if("edit".equals(mode)) {
 				 res.sendRedirect("edit.jsp?id="+id);
-			 }else {			 
+			 }else {
 				 res.sendRedirect("del?id="+id+"&cpass="+cpass);
 			 }
 		 }
@@ -55,4 +55,3 @@ public class PassOk extends HttpServlet {
 	}
 
 }
-

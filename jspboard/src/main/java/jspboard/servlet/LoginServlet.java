@@ -18,63 +18,62 @@ import jspBoard.dao.DBConnect;
 import jspBoard.dao.MembersDao;
 import jspBoard.dto.MDto;
 
-
 @WebServlet("/login")
 public class LoginServlet extends HttpServlet {
-	   private static final long serialVersionUID = 1L;
-	    public Connection conn = null;   
-	    DBConnect db = new DBConnect();
-	    
-	    public LoginServlet() {
-	        super();
-	    }
+	private static final long serialVersionUID = 1L;
+    public Connection conn = null;   
+	DBConnect db = new DBConnect();
+    
+    public LoginServlet() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
 
-	   protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-	      // TODO Auto-generated method stub
-	      response.getWriter().append("Served at: ").append(request.getContextPath());
-	   }
-
-	   protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-	        response.setContentType("text/html;charset=utf-8");   
-	        request.setCharacterEncoding("utf-8");
-	        PrintWriter out = response.getWriter();
-	        String[] rid = request.getParameterValues("rid");
-	        String uid = request.getParameter("uid");
-	        String upass= request.getParameter("upass");
-	        
-	        if(rid != null) {
-	           Cookie remId = new Cookie("uid", uid);
-	           response.addCookie(remId);
-	        }  
-	        
-	        try {
-	         conn = db.getConnection();
-	         MembersDao dao = new MembersDao(conn);
-	         MDto mdto = dao.login(uid, upass);
-	         if(mdto.getId() != 0 ) {
-	             //·Î±×ÀÎ ¼º°ø  , ¼¼¼Ç °´Ã¼ »ı¼º
-	           HttpSession session = request.getSession();
-	           session.setAttribute("mid", mdto.getId());
-	           session.setAttribute("userid", mdto.getUserid());
-	           session.setAttribute("useremail", mdto.getUseremail());
-	           session.setAttribute("username", mdto.getUsername());
-	           session.setAttribute("role", mdto.getRole()); 
-	           response.sendRedirect("index.jsp");
-	         }else {
-	             //·Î±×ÀÎ ½ÇÆĞ
-	            System.out.println("·Î±×ÀÎ ½ÇÆĞ");
-	            String scr = "<script>alert('¾ÆÀÌµğ ¶Ç´Â ºñ¹Ğ¹øÈ£°¡ Æ²·È½À´Ï´Ù. ´Ù½Ã È®ÀÎÇÏ¼¼¿ä.');"
-	                           + "location.href='index.jsp';</script>";   
-	             out.println(scr);
-	         }
-	      } catch (SQLException e) {
-	         e.printStackTrace();
-	      } catch (NamingException e) {
-	         e.printStackTrace();
-	      }
-	        
-	   }
-
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
 
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+        response.setContentType("text/html;charset=utf-8");	
+        request.setCharacterEncoding("utf-8");
+        PrintWriter out = response.getWriter();
+        String[] rid = request.getParameterValues("rid");
+        String uid = request.getParameter("uid");
+        String upass= request.getParameter("upass");
+        
+        if(rid != null) {
+        	Cookie remId = new Cookie("uid", uid);
+        	response.addCookie(remId);
+        }  
+        
+        try {
+			conn = db.getConnection();
+			MembersDao dao = new MembersDao(conn);
+			MDto mdto = dao.login(uid, upass);
+			if(mdto.getId() != 0 ) {
+		       //ë¡œê·¸ì¸ ì„±ê³µ  , ì„¸ì…˜ ê°ì²´ ìƒì„±
+			  HttpSession session = request.getSession();
+			  session.setAttribute("mid", mdto.getId());
+			  session.setAttribute("userid", mdto.getUserid());
+			  session.setAttribute("useremail", mdto.getUseremail());
+			  session.setAttribute("username", mdto.getUsername());
+			  session.setAttribute("role", mdto.getRole()); 
+			  response.sendRedirect("index.jsp");
+			}else {
+		       //ë¡œê·¸ì¸ ì‹¤íŒ¨
+			   System.out.println("ë¡œê·¸ì¸ ì‹¤íŒ¨");
+			   String scr = "<script>alert('ì•„ì´ë”” ë˜ëŠ” ë¹„ë°€ë²ˆí˜¸ê°€ í‹€ë ¸ìŠµë‹ˆë‹¤. ë‹¤ì‹œ í™•ì¸í•˜ì„¸ìš”.');"
+			   		         + "location.href='index.jsp';</script>";   
+		       out.println(scr);
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} catch (NamingException e) {
+			e.printStackTrace();
+		}
+        
+	}
+
+}

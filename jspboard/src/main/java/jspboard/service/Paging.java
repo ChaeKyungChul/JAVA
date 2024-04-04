@@ -1,11 +1,11 @@
 package jspBoard.service;
 
 public class Paging {
-	/* ÆäÀÌÂ¡À» À§ÇÑ º¯¼ö */
-    private int currentPage; //¹Ş¾Æ¿Ã ÇöÀç ÆäÀÌÁö ¹øÈ£
-    private int totalPosts; //ÀüÃ¼ ±Û ¼ö
-    private int postsPerPage;  //ÇÑ È­¸é¿¡ º¸ÀÏ ÆäÀÌÁö ¼ö
-    private int pagesPerBlock;//ÇÑ È­¸é¿¡ º¸ÀÏ ¸ñ·Ï ¼ö
+	/* í˜ì´ì§•ì„ ìœ„í•œ ë³€ìˆ˜ */
+    private int currentPage; //ë°›ì•„ì˜¬ í˜„ì¬ í˜ì´ì§€ ë²ˆí˜¸
+    private int totalPosts; //ì „ì²´ ê¸€ ìˆ˜
+    private int postsPerPage;  //í•œ í™”ë©´ì— ë³´ì¼ í˜ì´ì§€ ìˆ˜
+    private int pagesPerBlock;//í•œ í™”ë©´ì— ë³´ì¼ ëª©ë¡ ìˆ˜
     
     public Paging(int currentPage, 
     		      int totalPosts, 
@@ -18,7 +18,7 @@ public class Paging {
     }
     
       
-    //ÀüÃ¼ ÆäÀÌÁö ¼ö
+    //ì „ì²´ í˜ì´ì§€ ìˆ˜
     public int getTotalPages() {
     	return (int) Math.ceil((double) totalPosts/ postsPerPage);
     }
@@ -41,4 +41,3 @@ public class Paging {
 	}
  
 }
-

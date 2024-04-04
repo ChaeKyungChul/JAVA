@@ -19,47 +19,47 @@ import jspBoard.dto.BDto;
 
 @WebServlet("/editok")
 public class EditOk extends HttpServlet {
-	
+
 	protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
-		 res.setContentType("text/html;charset=utf-8");   
-	     req.setCharacterEncoding("utf-8");
-	   
-	     String id = req.getParameter("id");
-		 BDto dto = new BDto();
-		 Connection conn;
-		 DBConnect db = new DBConnect();
-		 dto.setId(Integer.parseInt(id));
-		 dto.setWriter(req.getParameter("writer"));	 
-		 dto.setPass(req.getParameter("pass"));
-		 dto.setTitle(req.getParameter("title"));
-		 dto.setContent(req.getParameter("content"));		
-		 int result = 0;
-		 try {
-			 conn = db.getConnection();		
-			 JBoardDao dao = new JBoardDao(conn);
-			 result = dao.updateDB(dto);
-			 
+        res.setContentType("text/html;charset=utf-8");	
+        req.setCharacterEncoding("utf-8");
+        
+		String id = req.getParameter("id");
+		BDto dto = new BDto();
+		Connection conn;
+		DBConnect db = new DBConnect();
+		dto.setId(Integer.parseInt(id));
+		dto.setWriter(req.getParameter("writer"));
+		dto.setPass(req.getParameter("pass"));
+		dto.setTitle(req.getParameter("title"));
+		dto.setContent(req.getParameter("content"));
+		int result = 0;
+		try {
+			conn = db.getConnection();
+			JBoardDao dao = new JBoardDao(conn);
+			result = dao.updateDB(dto);
+			
 		} catch (SQLException | NamingException e) {
 			e.printStackTrace();
-		}finally {
+		} finally {
 			db.closeConnection();
 		}
-		   
-	        PrintWriter out = res.getWriter();
-	        String txt;
-	        if(result==1) {
-	        	txt = "¼º°øÀûÀ¸·Î ¾÷µ¥ÀÌÆ®Çß½À´Ï´Ù.";
-			}else {
-				txt = "¹®Á¦°¡¹ß»ıÇß½À´Ï´Ù. °ü¸®ÀÚ¿¡°Ô ¹®ÀÇÇÏ¼¼¿ä.";
+        
+        PrintWriter out = res.getWriter();
+        String txt;
+        if(result==1) {
+           txt = "ì„±ê³µì ìœ¼ë¡œ ì—…ë°ì´íŠ¸ í–ˆìŠµë‹ˆë‹¤.";	 
+        }else {
+           txt = "ë¬¸ì œê°€ ë°œìƒí–ˆìŠµë‹ˆë‹¤. ê´€ë¦¬ìì—ê²Œ ë¬¸ì˜ í•˜ì„¸ìš”.";	
+        }
+	    String str = "<script>alert('"+txt+"'); "
+	    	       +    "location.href='contents.jsp?id="+id+"';"
+	    		   + "</script>";
+	    out.println(str);
 	}
-     String str = "<script>alert('"+txt+"');"
-     		    + "location.href='contents.jsp?id="+id+"';"
-     		    + "</script>";  
-     out.println(str);
-}
 
-	
-	protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {		
+
+	protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
 		doGet(req, res);
 	}
 

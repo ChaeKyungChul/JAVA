@@ -2,13 +2,19 @@ package jspBoard.servlet;
 
 import java.io.File;
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.SQLException;
 
+import javax.naming.NamingException;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import jspBoard.dao.DBConnect;
+import jspBoard.dao.JBoardImgDao;
 
 
 @WebServlet("/delete")
@@ -26,14 +32,34 @@ public class DeleteServlet extends HttpServlet {
 		}
 	}
 
-	//Àý´ë°æ·Î¸¦ Ã£¾Æ¼­ º¸³»ÁÖ´Â ¸Þ¼Òµå
+	//ì ˆëŒ€ê²½ë¡œë¥¼ ì°¾ì•„ì„œ ë³´ë‚´ì£¼ëŠ” ë©”ì†Œë“œ
 	private String getFilePathFromUrl(String fileUrl) {
 		
 		String fileName = fileUrl.substring(fileUrl.lastIndexOf("/") + 1);
-		//Àý´ë°æ·Î
+		//ì ˆëŒ€ê²½ë¡œ
 		ServletContext context = getServletContext();
 		String realPath = context.getRealPath("/uploads");
-		String filePath = realPath + "\\" + fileName;
+		String filePath = realPath + File.separator +  fileName;
+		
+		
+		//db ì‚­ì œ
+		DBConnect db = new DBConnect();
+		Connection conn;
+		try {
+			conn = db.getConnection();
+			JBoardImgDao idao = new JBoardImgDao(conn);
+			int rs = idao.deleteDB("nfilename", fileName);
+			if(rs>0) {
+				System.out.println("ì‚­ì œì™„ë£Œ");
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} catch (NamingException e) {
+			e.printStackTrace();
+		}
+
+
+		
 		return filePath;
 	}
 	

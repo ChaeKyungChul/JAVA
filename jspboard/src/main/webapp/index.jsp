@@ -14,15 +14,19 @@
     HttpSession sess = request.getSession(true);
     String sname = request.getParameter("searchname");  //검색
     String svalue = request.getParameter("searchvalue");
-     
+    ServletContext cont = getServletContext();
+ 
+    TrashFile trf = new TrashFile(cont);
+
     /* 페이징을 위한 변수 */
     int pg; //받아올 현재 페이지 번호
     int allCount; //1. 전체 개시글 수 
     int listCount = 10; //2. 한 페이지에 보일 목록 수
     int pageCount = 10; //3. 한 페이지에 보일 페이지 수  
     int limitPage; //4. 쿼리문으로 보낼 시작번호
-        
-    String cpg = request.getParameter("cpg");
+     
+    String cpg = "1";
+    cpg = request.getParameter("cpg");
     pg = (cpg == null)?1:Integer.parseInt(cpg);  //3항 연산   
     limitPage = (pg-1)*listCount;  //(현재페이지-1)x목록수 
     
@@ -50,7 +54,7 @@
     <section>
             <!-- listbox -->
             <div class="listbox">
-                <h1 class="text-center mb-5">게시판z</h1>
+                <h1 class="text-center mb-5">게시판</h1>
                 <div class="d-flex justify-content-between py-4">
                     <div>
                         <label>총 게시글</label> :<%=formatter.format(allCount) %>개 / <%=formatter.format(myPage.getTotalPages()) %>page
@@ -107,12 +111,16 @@
                     		  String reicon = "<i class=\"ri-corner-down-right-line\"></i>";
                     	      styleDepth = "<span style='display:inline-block;width:"+padding+"'></span>"+reicon+" ";
                     	  }
+                    	  String commentHit = "";
+                    	  if(chit > 0) {
+                    		  commentHit = " ("+chit+")";
+                    	  }
                    %>    
                        <tr>
                            <td class="text-center"><%=num %></td>
                            <% if(sess.getAttribute("mid") != null){ %>
                            <td><a href="contents.jsp?id=<%=id%>&cpg=<%=pg%>">
-                               <%=styleDepth%><%=title %>
+                               <%=styleDepth%><%=title %><%=commentHit %>
                             </a><span></span>
                             <!-- 
                                <i class="ri-file-image-fill"></i>
@@ -122,7 +130,7 @@
                             </td>
                            <% }else{ %>
                             <td>
-                               <a href="javascript:void(0)"><%=styleDepth%><%=title %>
+                               <a href="javascript:void(0)"><%=styleDepth%><%=title %><%=commentHit %>
                                </a><span></span>
                             <!-- 
                                <i class="ri-file-image-fill"></i>
@@ -230,4 +238,4 @@
             </div>
             <!-- /listbox-->
          </section>
-    <%@ include file="inc/footer.jsp" %>               
+    <%@ include file="inc/footer.jsp" %>     

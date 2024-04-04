@@ -16,11 +16,11 @@ public class JBoardDao {
 	Statement stmt = null;
 	ResultSet res = null;
 	Connection conn;
-	
+		
     public JBoardDao(Connection conn) {
     	this.conn = conn;
     }
-    
+     
     public int AllSelectDB() {
     	int rs = 0;
     	String sql = "select count(*) from jboard";   	
@@ -181,7 +181,7 @@ public class JBoardDao {
     	return dtos;
     }
     
-    //ºñ¹ø°ËÁõ
+    //ë¹„ë²ˆê²€ì¦
     public int findPass(String id, String pass) { 
 
     	int nid = Integer.parseInt(id);
@@ -208,7 +208,7 @@ public class JBoardDao {
     	return result;
     }
  
-    //»èÁ¦
+    //ì‚­ì œ
     public int deleteDB(String id) {
     	int nid = Integer.parseInt(id);
     	int result = 0;
@@ -279,8 +279,9 @@ public class JBoardDao {
     	return bDto;
     }
     
-    //¾²±â
+    //ì“°ê¸°
     public int insertDB(BDto dto) {
+        JBoardImgDao idao = new JBoardImgDao(conn);
     	int num = 0;
     	String sql = "insert into jboard ( depth,  title, content, writer, pass, userid, imnum) values (  ?, ?, ?, ?, ?, ?, ?)";
     	try {
@@ -297,9 +298,10 @@ public class JBoardDao {
             }
             pstmt.setString(7, dto.getImnum());
             pstmt.executeUpdate();
-            res = pstmt.getGeneratedKeys(); //ÀÔ·Â ÈÄ auto increment °ªÀ» ¹İÈ¯ ¹ŞÀ½ 	
+            res = pstmt.getGeneratedKeys(); //ì…ë ¥ í›„ auto increment ê°’ì„ ë°˜í™˜ ë°›ìŒ 	
               if(res.next()) {
-            	num = res.getInt(1);            
+            	num = res.getInt(1);    
+            	idao.updateDB(num, dto.getImnum());
              }
               
             if(dto.getDepth() == 0){
@@ -321,7 +323,7 @@ public class JBoardDao {
     	return num;
     }
     
-    //¾÷µ¥ÀÌÆ®
+    //ì—…ë°ì´íŠ¸
     public int updateDB(int id, int num, String column) {
         int rs = 0;
         String sql = "update jboard set "+ column +"=? where id=?";
@@ -368,7 +370,7 @@ public class JBoardDao {
     }
     
     
-    //¾÷µ¥ÀÌÆ®db ¿À¹ö·Îµå
+    //ì—…ë°ì´íŠ¸db ì˜¤ë²„ë¡œë“œ
     public int updateDB(BDto dto) {
         int rs = 0;
         String sql = "update jboard set writer = ? , pass = ?, title =?, content=? where id=?";
@@ -394,7 +396,7 @@ public class JBoardDao {
     	return rs;
     }
     
-    //±Û ¹øÈ£Áõ°¡ ¾÷µ¥ÀÌÆ®
+    //ê¸€ ë²ˆí˜¸ì¦ê°€ ì—…ë°ì´íŠ¸
     public int updateDB(int refid, int renum) {
     	String sql = "update jboard set renum = renum + 1 where refid=? and renum > ?";
     	int rs = 0;

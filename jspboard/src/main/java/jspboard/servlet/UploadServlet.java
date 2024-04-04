@@ -25,83 +25,83 @@ import jspBoard.dto.ImgDto;
 @WebServlet("/upload")
 public class UploadServlet extends HttpServlet {
 
-   protected void doPost(HttpServletRequest request, HttpServletResponse response) 
-           throws ServletException, IOException {
-       //æ˜∑ŒµÂ∞° ¿÷¥Ÿ∏È multipart/form-data¿Œ¡ˆ ∆«¥‹
-       if (!ServletFileUpload.isMultipartContent(request)) {
-           throw new ServletException("Content type¿Ã multipart/form-data∞° æ∆¥’¥œ¥Ÿ.");
-       }
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) 
+	        throws ServletException, IOException {
+	    //ÏóÖÎ°úÎìúÍ∞Ä ÏûàÎã§Î©¥ multipart/form-dataÏù∏ÏßÄ ÌåêÎã®
+	    if (!ServletFileUpload.isMultipartContent(request)) {
+	        throw new ServletException("Content typeÏù¥ multipart/form-dataÍ∞Ä ÏïÑÎãôÎãàÎã§.");
+	    }
 
-       String oFileName = null;
-       String nFileName = null;
-       Long fileSize = 0L;
-       String ext = null;
-       String imnum = Long.toString(System.currentTimeMillis());
+	    String oFileName = null;
+	    String nFileName = null;
+	    Long fileSize = 0L;
+	    String ext = null;
+	    String imnum = Long.toString(System.currentTimeMillis());
 
-       HttpSession session = request.getSession();
-       String userid = (String) session.getAttribute("userid");
+	    HttpSession session = request.getSession();
+	    String userid = (String) session.getAttribute("userid"); //ÌöåÏõêÏ†ïÎ≥¥Îäî sessionÏóêÏÑú Î∞õÎèÑÎ°ù
 
-       ServletContext context = getServletContext();
-       String realPath = context.getRealPath("/uploads");
+	    ServletContext context = getServletContext();
+	    String realPath = context.getRealPath("/uploads");
 
-       DiskFileItemFactory factory = new DiskFileItemFactory();
-       ServletFileUpload upload = new ServletFileUpload(factory);
+	    DiskFileItemFactory factory = new DiskFileItemFactory();
+	    ServletFileUpload upload = new ServletFileUpload(factory);
 
-       try {
-           List<FileItem> items = upload.parseRequest(request);
+	    try {
+	        List<FileItem> items = upload.parseRequest(request);
 
-           for (FileItem item : items) {
-               if (item.isFormField()) {
-                   // ∆˚ « µÂ √≥∏Æ
-                   String fieldName = item.getFieldName();
-                   String fieldValue = item.getString();
+	        for (FileItem item : items) {
+	            if (item.isFormField()) {
+	                // Ìèº ÌïÑÎìú Ï≤òÎ¶¨
+	                String fieldName = item.getFieldName();
+	                String fieldValue = item.getString();
 
-                   if ("imnum".equals(fieldName) && !fieldValue.isEmpty()) {
-                       imnum = fieldValue;
-                   }
-               }
-           }
+	                if ("imnum".equals(fieldName) && !fieldValue.isEmpty()) {
+	                    imnum = fieldValue;
+	                }
+	            }
+	        }
 
-           for (FileItem item : items) {
-               if (!item.isFormField()) {
-                   // ∆ƒ¿œ √≥∏Æ
-                   oFileName = item.getName();
-                   ext = oFileName.substring(oFileName.lastIndexOf('.'));
-                   fileSize = item.getSize();
-                   nFileName = "img_" + System.currentTimeMillis() + ext;
+	        for (FileItem item : items) {
+	            if (!item.isFormField()) {
+	                // ÌååÏùº Ï≤òÎ¶¨
+	                oFileName = item.getName();
+	                ext = oFileName.substring(oFileName.lastIndexOf('.'));
+	                fileSize = item.getSize();
+	                nFileName = "img_" + System.currentTimeMillis() + ext;
 
-                   String filePath = realPath + File.separator + nFileName;
-                   File storeFile = new File(filePath);
+	                String filePath = realPath + File.separator + nFileName;
+	                File storeFile = new File(filePath);
 
-                   item.write(storeFile);  // º≠πˆ ¿˙¿Â øœ∑·
-               }
-           }
+	                item.write(storeFile);  // ÏÑúÎ≤Ñ Ï†ÄÏû• ÏôÑÎ£å
+	            }
+	        }
 
-           // DB ø¨∞· π◊ ¿˙¿Â
-           DBConnect db = new DBConnect();
-           Connection conn = db.getConnection();
-           JBoardImgDao idao = new JBoardImgDao(conn);
-           ImgDto idto = new ImgDto();
+	        // DB Ïó∞Í≤∞ Î∞è Ï†ÄÏû•
+	        DBConnect db = new DBConnect();
+	        Connection conn = db.getConnection();
+	        JBoardImgDao idao = new JBoardImgDao(conn);
+	        ImgDto idto = new ImgDto();
 
-           idto.setOfilename(oFileName);
-           idto.setNfilename(nFileName);
-           idto.setExt(ext);
-           idto.setFilesize(fileSize);
-           idto.setImnum(imnum);
-           idto.setUserid(userid);
+	        idto.setOfilename(oFileName);
+	        idto.setNfilename(nFileName);
+	        idto.setExt(ext);
+	        idto.setFilesize(fileSize);
+	        idto.setImnum(imnum);
+	        idto.setUserid(userid);
 
-           String rs = idao.insertDB(idto);
-           String url = "uploads/" + nFileName;
-           String json = "{\"url\": \"" + url + "\", \"imnum\":\"" + rs + "\"}";
+	        String rs = idao.insertDB(idto);
+	        String url = "uploads/" + nFileName;
+	        String json = "{\"url\": \"" + url + "\", \"imnum\":\"" + rs + "\"}";
 
-           response.setContentType("application/json");
-           response.setCharacterEncoding("UTF-8");
-           response.getWriter().write(json);
-       } catch (Exception e) {
-           throw new ServletException(e);
-       }
-   }
+	        response.setContentType("application/json");
+	        response.setCharacterEncoding("UTF-8");
+	        response.getWriter().write(json);
+	        
+	    } catch (Exception e) {
+	        throw new ServletException(e);
+	    }
+	}
 
 
 }
-

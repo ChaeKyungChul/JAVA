@@ -11,24 +11,24 @@ public class DBConnect {
    public Connection conn = null;	
    private InitialContext initContext;
   
-   //Ä¿³Ø¼Ç ÇÏ´Â ¸Ş¼Òµå
+   //ì»¤ë„¥ì…˜ í•˜ëŠ” ë©”ì†Œë“œ
    public Connection getConnection() throws SQLException, NamingException{
 	  if(conn == null || conn.isClosed()) {
-  	    initContext = new InitialContext(); //JNDI ÄÁÅØ½ºÆ® ÃÊ±âÈ­
+  	    initContext = new InitialContext(); //JNDI ì»¨í…ìŠ¤íŠ¸ ì´ˆê¸°í™”
 		DataSource ds = (DataSource) initContext.lookup("java:/comp/env/jdbc/javaboard");
-		//JNDI¿¡¼­ ÀÌ¸§À» Ã£¾Æ¿È. "java:/comp/env/" ÀÌ¸§Ã£´Â µ¥ »ç¿ëµÇ´Â Á¢µÎ¾î
+		//JNDIì—ì„œ ì´ë¦„ì„ ì°¾ì•„ì˜´. "java:/comp/env/" ì´ë¦„ì°¾ëŠ” ë° ì‚¬ìš©ë˜ëŠ” ì ‘ë‘ì–´
 		conn = ds.getConnection();
-		System.out.println("dbÁ¢¼Ó ¼º°ø");
+		System.out.println("dbì ‘ì† ì„±ê³µ");
 	  }
 	  return conn;
   }
    
-  //Ä¿³Ø¼Ç ´İ´Â ¸Ş¼Òµå 
+  //ì»¤ë„¥ì…˜ ë‹«ëŠ” ë©”ì†Œë“œ 
   public void closeConnection() {
 	  try {
 		  if(conn != null && !conn.isClosed()) {
 			  conn.close();
-			  System.out.println("db¸¦ ´İ¾Ò½À´Ï´Ù.");
+			  System.out.println("dbë¥¼ ë‹«ì•˜ìŠµë‹ˆë‹¤.");
 		  }
 	  }catch(SQLException e) {
 		  e.printStackTrace();
@@ -38,4 +38,3 @@ public class DBConnect {
   }
    
 }
-

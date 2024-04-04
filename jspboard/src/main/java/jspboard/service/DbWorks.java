@@ -7,8 +7,10 @@ import java.util.ArrayList;
 import javax.naming.NamingException;
 
 import jspBoard.dao.DBConnect;
+import jspBoard.dao.JBoardCommentDao;
 import jspBoard.dao.JBoardDao;
 import jspBoard.dto.BDto;
+import jspBoard.dto.CDto;
 
 public class DbWorks { 
 	private int limitPage;
@@ -35,7 +37,7 @@ public class DbWorks {
 		this.id = id;
 	}
 
-	//ÀüÃ¼ ±Û °¹¼ö
+	//ì „ì²´ ê¸€ ê°¯ìˆ˜
 	public int getAllSelect() {
 		int allCount = 0;
 		try {
@@ -54,7 +56,7 @@ public class DbWorks {
 		return allCount;
 	}
 	
-	//ÀÏ¹İ ÆäÀÌÂ¡ÀÌ ÀÖ´Â ¸ñ·Ï
+	//ì¼ë°˜ í˜ì´ì§•ì´ ìˆëŠ” ëª©ë¡
 	public ArrayList<BDto> getList(){
 		ArrayList<BDto> lists = null;
 		try {
@@ -69,7 +71,7 @@ public class DbWorks {
 		return lists;
 	}
 	
-	//°Ë»ö ¸ñ·Ï
+	//ê²€ìƒ‰ ëª©ë¡
 	public ArrayList<BDto> getSearchList(){
 		ArrayList<BDto> lists = null;
 		try {
@@ -84,7 +86,7 @@ public class DbWorks {
 		return lists;
 	}
 	
-	//contents º¸±â
+	//contents ë³´ê¸°
 	public BDto getSelectOne() {
 		BDto list = null;
 		try {
@@ -99,7 +101,24 @@ public class DbWorks {
 		return list;
 	}
 	
-	//update (Á¶È¸¼ö Áõ°¡)
+	//ì½”ë©˜íŠ¸ ëª©ë¡ë³´ê¸° 
+	public ArrayList<CDto> getCommentList(String jboard_id) {
+		int jid = Integer.parseInt(jboard_id);
+		ArrayList<CDto> list = null;
+		try {
+			conn = db.getConnection();
+			JBoardCommentDao cdao = new JBoardCommentDao(conn);
+			list = cdao.selectDB(jid);
+		}catch (SQLException | NamingException e) {
+			e.printStackTrace();
+		} finally {
+			db.closeConnection();
+		}
+		return list;
+	}
+	
+	
+	//update (ì¡°íšŒìˆ˜ ì¦ê°€)
 	public void getUpdate(int count) {   
 		int uid = Integer.parseInt(getId());
 		try {
@@ -113,6 +132,3 @@ public class DbWorks {
 		}
 	}
 }
-
-
-

@@ -141,6 +141,9 @@ span.space{
     background:#fff;
     padding:40px;
 }
+.listbox{
+    border-bottom:1px solid #ddd;
+}
 .listbox h1{
     font-size:25px;
 }
@@ -187,6 +190,36 @@ span.space{
     display:inline-block;
     width:20px;
 }
+.form-box{
+	width:100%;
+}
+.comment-btn{
+    width:15%;
+    background:#434c53;
+    color:#fff;
+}
+.comments .btn-box{
+   position:relative;
+   cursor:pointer;
+}
+.edel{
+    border:1px solid #434c53;
+    width:80px;
+    padding:10px 15px;
+    background:#fff;
+    position:absolute;
+    z-index:100;
+    right:-50px;
+    display:none;
+}
+.edel a{
+    display:block;
+    text-align:center;
+    margin-top:5px;
+    margin-bottom:5px; 
+}
+
+
 /* 페이징 */
 .paging{
    list-style-type:none;
@@ -275,3 +308,5 @@ footer{
 	border-radius:10px;
 	margin:30px auto;
 }
+
+/****** 파일첨부 **/

@@ -69,6 +69,11 @@
           </div>
           
        </div>
+       
+       <ul class="list-group list-group-flush comments">
+          <%@ include file="comments_list.jsp" %>
+          <%@ include file="comments_write.jsp" %>          
+       </ul>
     </section>        
 
 <%@ include file="inc/footer.jsp" %>  
