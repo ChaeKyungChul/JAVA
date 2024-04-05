@@ -50,6 +50,35 @@ public class JBoardCommentDao {
 	   return dtos;
    }
    
+   //select view
+   public CDto selectDB(String id){
+	   int cid = Integer.parseInt(id);
+	   CDto dto = new CDto();
+	   String sql = "select * from jboard_comment where id=?";
+	   try {
+		   pstmt = conn.prepareStatement(sql);
+		   pstmt.setInt(1, cid);
+		   rs = pstmt.executeQuery();	   
+		   if(rs.next()) {
+			  dto.setId(rs.getInt("id"));
+			  dto.setJboard_id(rs.getInt("jboard_id"));
+			  dto.setUserid(rs.getString("userid"));
+			  dto.setUsername(rs.getString("username"));
+			  dto.setComment(rs.getString("comment"));
+			  dto.setWdate(rs.getTimestamp("wdate"));
+		   }
+	   }catch(SQLException e) {
+		   e.printStackTrace();
+	   }finally {
+		  try {
+			  if(rs != null) rs.close();
+			  if(pstmt != null) pstmt.close();
+		  }catch(SQLException e) {}
+	   }
+	   
+	   return dto;
+   }
+   
    //코멘트 쓰기
    public int insertDB(CDto dto, int chit) {
 	   JBoardDao dao = new JBoardDao(conn);
@@ -77,4 +106,45 @@ public class JBoardCommentDao {
 	   return rs;
    }
    
+   //코멘트 삭제
+   public int deleteDB(String id) {
+	   int cid = Integer.parseInt(id);
+	   int rs = 0;
+	   String sql = "delete from jboard_comment where id = ?";
+	   try {
+		   pstmt = conn.prepareStatement(sql);
+		   pstmt.setInt(1, cid);
+		   rs = pstmt.executeUpdate();
+	   }catch(SQLException e) {
+		   e.printStackTrace();
+	   }finally {
+			  try {
+				  if(pstmt != null) pstmt.close();
+			  }catch(SQLException e) {}
+		   }	   
+	   return rs;
+   }
+   
+   //코멘트 수정 
+   public int updateDB(CDto dto, String id) {
+	   int cid = Integer.parseInt(id);
+	   int rs = 0;
+	   
+	   String sql = "update jboard_comment set username = ?, comment = ? where id = ?";
+	   try {
+		   pstmt = conn.prepareStatement(sql);
+		   pstmt.setString(1, dto.getUsername());
+		   pstmt.setString(2, dto.getComment());
+		   pstmt.setInt(3, cid);
+		   System.out.println(pstmt);
+		   rs = pstmt.executeUpdate();
+	   }catch(SQLException e) {
+		   e.printStackTrace();
+	   }finally {
+			  try {
+				  if(pstmt != null) pstmt.close();
+			  }catch(SQLException e) {}
+		   }	   
+	   return rs;
+   }
 }

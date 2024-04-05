@@ -220,7 +220,7 @@ span.space{
 }
 
 
-/* í˜ì´ì§• */
+/* ÆäÀÌÂ¡ */
 .paging{
    list-style-type:none;
    display:flex;
@@ -243,7 +243,7 @@ span.space{
     text-decoration:none;
 }
 
-/** ê²€ìƒ‰ **/
+/** °Ë»ö **/
 .searchform{
     width:40%;
     margin-left:auto;
@@ -274,7 +274,7 @@ span.space{
     max-width:125px;
 }
 
-/** ê¸€ì“°ê¸° **/
+/** ±Û¾²±â **/
 label.form-label{
     display:inline-block;
     width:100px;
@@ -293,7 +293,7 @@ footer{
     margin-right:-15px;
 }
 
-/********** ë³¸ë¬¸ ****************/
+/********** º»¹® ****************/
 .file-box a, .file-box label{
    margin-right:10px;	
 }
@@ -309,4 +309,4 @@ footer{
 	margin:30px auto;
 }
 
-/****** íŒŒì¼ì²¨ë¶€ **/
+/****** ÆÄÀÏÃ·ºÎ **/

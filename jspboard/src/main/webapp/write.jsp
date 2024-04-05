@@ -28,8 +28,7 @@
                             <textarea name="content" id="content" class="form-control"></textarea>
                         </div>
                     
-                    
-
+            
                         <!-- /게스트일때 적용 -->
                         <div class="col-12 text-center my-5">
                             <a href="index.html" class="btn btn-danger px-5 mx-2">취소</a>

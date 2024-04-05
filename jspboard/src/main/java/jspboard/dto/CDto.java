@@ -46,6 +46,12 @@ public class CDto {
 	public void setWdate(Timestamp wdate) {
 		this.wdate = wdate;
 	}
+	
+	@Override
+	public String toString() {
+		return "CDto [id=" + id + ", jboard_id=" + jboard_id + ", userid=" + userid + ", username=" + username
+				+ ", comment=" + comment + ", wdate=" + wdate + "]";
+	}
 	  
-  
+    
 }
