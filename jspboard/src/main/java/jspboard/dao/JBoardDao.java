@@ -41,6 +41,7 @@ public class JBoardDao {
     	return rs;
     }
     
+    
     public int AllSelectDB(String sname, String svalue) {
     	int rs = 0;
     	String sql = "select count(*) from jboard where "+ sname +" LIKE ?";   	
