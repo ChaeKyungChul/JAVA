@@ -923,3 +923,23 @@ java.lang.IllegalArgumentException: release 16 is not found in the system
 	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:406)
 	at org.eclipse.ui.actions.GlobalBuildAction$1.run(GlobalBuildAction.java:180)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2024-05-31 17:59:17.618
+!MESSAGE Could not publish server configuration for Tomcat v9.0 Server at localhost (2).
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2024-05-31 17:59:17.618
+!MESSAGE Multiple Contexts have a path of "/jspBoard".
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2024-05-31 18:02:13.965
+!MESSAGE Could not publish server configuration for Tomcat v9.0 Server at localhost (2).
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2024-05-31 18:02:13.966
+!MESSAGE Multiple Contexts have a path of "/jspBoard".
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2024-05-31 18:02:18.256
+!MESSAGE Could not publish server configuration for Tomcat v9.0 Server at localhost (2).
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2024-05-31 18:02:18.256
+!MESSAGE Multiple Contexts have a path of "/jspBoard".
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2024-05-31 18:02:39.699
+!MESSAGE Could not publish server configuration for Tomcat v9.0 Server at localhost (2).
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2024-05-31 18:02:39.699
+!MESSAGE Multiple Contexts have a path of "/jspBoard".

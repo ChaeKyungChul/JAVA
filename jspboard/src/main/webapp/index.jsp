@@ -60,7 +60,7 @@
                         <label>총 게시글</label> :<%=formatter.format(allCount) %>개 / <%=formatter.format(myPage.getTotalPages()) %>page
                     </div>
                     <div>
-                        <a href="/jspBoard" class="btn btn-primary">목록</a>
+                        <a href="/jspboard" class="btn btn-primary">목록</a>
                         <%--
                         <% if(sess.getAttribute("mid") != null){ %>
                           <a href="write.jsp" class="btn btn-primary">글쓰기</a> 
@@ -206,7 +206,7 @@
                     </ul>
                     <div>
            
-                        <a href="/jspBoard" class="btn btn-primary">목록</a>
+                        <a href="/jspboard" class="btn btn-primary">목록</a>
                         <% if(sess.getAttribute("mid") != null){ %>
                           <a href="write.jsp" class="btn btn-primary">글쓰기</a> 
                         <% } %>  
