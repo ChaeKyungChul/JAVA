@@ -1,4 +1,4 @@
-package jspBoard.servlet;
+package jspboard.servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -13,9 +13,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import jspBoard.dao.DBConnect;
-import jspBoard.dao.JBoardDao;
-import jspBoard.dto.BDto;
+import jspboard.dao.DBConnect;
+import jspboard.dao.JBoardDao;
+import jspboard.dto.BDto;
 
 @WebServlet("/editok")
 public class EditOk extends HttpServlet {

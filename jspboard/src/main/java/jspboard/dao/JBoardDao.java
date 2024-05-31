@@ -1,4 +1,4 @@
-package jspBoard.dao;
+package jspboard.dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -8,7 +8,7 @@ import java.sql.Statement;
 import java.sql.Timestamp;
 import java.util.ArrayList;
 
-import jspBoard.dto.BDto;
+import jspboard.dto.BDto;
 
 public class JBoardDao {
  

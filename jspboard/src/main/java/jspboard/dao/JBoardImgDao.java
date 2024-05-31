@@ -1,4 +1,4 @@
-package jspBoard.dao;
+package jspboard.dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -7,8 +7,8 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 
-import jspBoard.dto.BDto;
-import jspBoard.dto.ImgDto;
+import jspboard.dto.BDto;
+import jspboard.dto.ImgDto;
 
 public class JBoardImgDao {
 	

@@ -1,4 +1,4 @@
-package jspBoard.servlet;
+package jspboard.servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -12,9 +12,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import jspBoard.dao.DBConnect;
-import jspBoard.dao.JBoardDao;
-import jspBoard.dao.JBoardImgDao;
+import jspboard.dao.DBConnect;
+import jspboard.dao.JBoardDao;
+import jspboard.dao.JBoardImgDao;
 
 
 @WebServlet("/del")

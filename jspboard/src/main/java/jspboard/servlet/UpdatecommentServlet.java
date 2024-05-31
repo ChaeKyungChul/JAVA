@@ -1,4 +1,4 @@
-package jspBoard.servlet;
+package jspboard.servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -13,10 +13,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import jspBoard.dao.DBConnect;
-import jspBoard.dao.JBoardCommentDao;
-import jspBoard.dao.JBoardDao;
-import jspBoard.dto.CDto;
+import jspboard.dao.DBConnect;
+import jspboard.dao.JBoardCommentDao;
+import jspboard.dao.JBoardDao;
+import jspboard.dto.CDto;
 
 @WebServlet("/updatecomment")
 public class UpdatecommentServlet extends HttpServlet {

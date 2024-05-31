@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Game1 {
 
 	public static void main(String[] args) {
-	
+		System.out.println("가위,바위,보 중 입력하세요");
 
 		Scanner in = new Scanner(System.in);
 		String user = in.nextLine();

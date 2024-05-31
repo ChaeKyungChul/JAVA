@@ -1,4 +1,4 @@
-package jspBoard.dto;
+package jspboard.dto;
 
 import java.sql.Timestamp;
 

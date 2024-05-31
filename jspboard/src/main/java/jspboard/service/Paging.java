@@ -1,4 +1,4 @@
-package jspBoard.service;
+package jspboard.service;
 
 public class Paging {
 	/* 페이징을 위한 변수 */

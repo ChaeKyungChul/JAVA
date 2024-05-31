@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ page import="jspBoard.service.*, jspBoard.dto.*,java.sql.*, java.text.*, java.util.ArrayList"%> 
+<%@ page import="jspboard.service.*, jspboard.dto.*,java.sql.*, java.text.*, java.util.ArrayList"%> 
 <%
    ArrayList<CDto> lists = db.getCommentList(id);
    for(CDto list : lists) {

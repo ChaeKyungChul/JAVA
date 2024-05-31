@@ -1,4 +1,4 @@
-package jspBoard.servlet;
+package jspboard.servlet;
 
 import java.io.File;
 import java.io.IOException;
@@ -17,9 +17,9 @@ import org.apache.commons.fileupload.FileItem;
 import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
 
-import jspBoard.dao.DBConnect;
-import jspBoard.dao.JBoardImgDao;
-import jspBoard.dto.ImgDto;
+import jspboard.dao.DBConnect;
+import jspboard.dao.JBoardImgDao;
+import jspboard.dto.ImgDto;
 
 
 @WebServlet("/upload")

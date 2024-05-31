@@ -1,4 +1,4 @@
-package jspBoard.service;
+package jspboard.service;
 
 import java.io.File;
 import java.sql.Connection;
@@ -10,9 +10,9 @@ import java.util.logging.Logger;
 import javax.naming.NamingException;
 import javax.servlet.ServletContext;
 
-import jspBoard.dao.DBConnect;
-import jspBoard.dao.JBoardImgDao;
-import jspBoard.dto.ImgDto;
+import jspboard.dao.DBConnect;
+import jspboard.dao.JBoardImgDao;
+import jspboard.dto.ImgDto;
 
 public class TrashFile {
     

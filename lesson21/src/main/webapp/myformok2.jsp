@@ -61,7 +61,7 @@
    		<%=dto.getUserpass() %>
    	</li>
    	<li><label>이메일</label>
-   		<%=dto.getUseremail() %>
+   	<%-- 	<%=dto.getUseremail() %> --%>
    	</li>
    	<li><label>주소</label>
    		<%=dto.getAddress() %>

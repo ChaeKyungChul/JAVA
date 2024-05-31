@@ -1,4 +1,4 @@
-package jspBoard.servlet;
+package jspboard.servlet;
 
 import java.io.IOException;
 import java.sql.Connection;
@@ -12,8 +12,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import jspBoard.dao.DBConnect;
-import jspBoard.dao.JBoardDao;
+import jspboard.dao.DBConnect;
+import jspboard.dao.JBoardDao;
 
 @WebServlet("/passok")
 public class PassOk extends HttpServlet {   

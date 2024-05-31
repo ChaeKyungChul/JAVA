@@ -1,4 +1,4 @@
-package jspBoard.dao;
+package jspboard.dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-import jspBoard.dto.CDto;
+import jspboard.dto.CDto;
 
 public class JBoardCommentDao {
 
@@ -79,7 +79,7 @@ public class JBoardCommentDao {
 	   return dto;
    }
    
-   //코멘트 쓰기
+   //肄붾찘�듃 �벐湲�
    public int insertDB(CDto dto, int chit) {
 	   JBoardDao dao = new JBoardDao(conn);
 	   int rs = 0;
@@ -92,7 +92,7 @@ public class JBoardCommentDao {
 		   pstmt.setString(3, dto.getUsername());
 		   pstmt.setString(4, dto.getComment());
 		   rs = pstmt.executeUpdate();
-		   //원글에 코멘트 숫자를 업데이트
+		   //�썝湲��뿉 肄붾찘�듃 �닽�옄瑜� �뾽�뜲�씠�듃
 		   dao.updateDB(dto.getJboard_id(), chit+1, "chit");
 		   
 	   }catch(SQLException e) {
@@ -106,7 +106,7 @@ public class JBoardCommentDao {
 	   return rs;
    }
    
-   //코멘트 삭제
+   //肄붾찘�듃 �궘�젣
    public int deleteDB(String id) {
 	   int cid = Integer.parseInt(id);
 	   int rs = 0;
@@ -125,7 +125,7 @@ public class JBoardCommentDao {
 	   return rs;
    }
    
-   //코멘트 수정 
+   //肄붾찘�듃 �닔�젙 
    public int updateDB(CDto dto, String id) {
 	   int cid = Integer.parseInt(id);
 	   int rs = 0;

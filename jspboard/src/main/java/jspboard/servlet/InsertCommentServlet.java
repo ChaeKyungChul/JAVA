@@ -1,4 +1,4 @@
-package jspBoard.servlet;
+package jspboard.servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -13,12 +13,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import jspBoard.dao.DBConnect;
-import jspBoard.dao.JBoardCommentDao;
-import jspBoard.dao.MembersDao;
-import jspBoard.dto.BDto;
-import jspBoard.dto.CDto;
-import jspBoard.dto.MDto;
+import jspboard.dao.DBConnect;
+import jspboard.dao.JBoardCommentDao;
+import jspboard.dao.MembersDao;
+import jspboard.dto.BDto;
+import jspboard.dto.CDto;
+import jspboard.dto.MDto;
 
 @WebServlet("/insertcomment")
 public class InsertCommentServlet extends HttpServlet {

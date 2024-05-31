@@ -1,10 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page errorPage="error.jsp" %>
-<%@ page import="java.sql.*, jspBoard.dao.MembersDao" %> 
+<%@ page import="java.sql.*, jspboard.dao.MembersDao" %> 
 <% request.setCharacterEncoding("utf-8"); %>
-<jsp:useBean id="db" class="jspBoard.dao.DBConnect" scope="page"/>
-<jsp:useBean id="mDto" class="jspBoard.dto.MDto" scope="page" />
+<jsp:useBean id="db" class="jspboard.dao.DBConnect" scope="page"/>
+<jsp:useBean id="mDto" class="jspboard.dto.MDto" scope="page" />
 <jsp:setProperty name="mDto" property="*" /> 
 
 <%

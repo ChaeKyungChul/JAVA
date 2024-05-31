@@ -1,4 +1,4 @@
-package jspBoard.dto;
+package jspboard.dto;
 
 public class ImgDto {
    private int id;

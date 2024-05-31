@@ -1,4 +1,4 @@
-package jspBoard.servlet;
+package jspboard.servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -14,9 +14,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import jspBoard.dao.DBConnect;
-import jspBoard.dao.MembersDao;
-import jspBoard.dto.MDto;
+import jspboard.dao.DBConnect;
+import jspboard.dao.MembersDao;
+import jspboard.dto.MDto;
 
 @WebServlet("/login")
 public class LoginServlet extends HttpServlet {

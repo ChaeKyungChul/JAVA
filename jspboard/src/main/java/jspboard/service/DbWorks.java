@@ -1,4 +1,4 @@
-package jspBoard.service;
+package jspboard.service;
 
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -6,11 +6,11 @@ import java.util.ArrayList;
 
 import javax.naming.NamingException;
 
-import jspBoard.dao.DBConnect;
-import jspBoard.dao.JBoardCommentDao;
-import jspBoard.dao.JBoardDao;
-import jspBoard.dto.BDto;
-import jspBoard.dto.CDto;
+import jspboard.dao.DBConnect;
+import jspboard.dao.JBoardCommentDao;
+import jspboard.dao.JBoardDao;
+import jspboard.dto.BDto;
+import jspboard.dto.CDto;
 
 public class DbWorks { 
 	private int limitPage;
